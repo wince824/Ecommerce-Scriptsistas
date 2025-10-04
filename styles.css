@@ -1048,7 +1048,6 @@ body{
   font-weight: bold;
 }
 
-/* Responsive Design */
 @media (max-width: 900px) {
   .banner {
     flex-direction: column;
