@@ -541,3 +541,384 @@
   border-radius: 20px;
   font-weight: bold;
 }
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .banner {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .side {
+    flex: none;
+  }
+
+  .side img {
+    height: 250px;
+    width: 300px;
+  }
+
+  .arrival-products {
+    grid-template-columns: 1fr;
+  }
+
+  .promo-banner {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+
+  .promo-title {
+    font-size: 28px;
+  }
+
+  .deals-content {
+    flex-direction: column;
+  }
+
+  .deals-promo {
+    width: 100%;
+    flex: none;
+  }
+
+  .deals-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 36px;
+  }
+
+  .num {
+    font-size: 40px;
+  }
+
+  .countdown {
+    gap: 10px;
+  }
+
+  .arrival-title {
+    font-size: 28px;
+  }
+
+  .deals-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*Nyipoji */
+
+.testimonial-tag {
+
+  text-align: center;
+
+}
+
+
+#testimonial h2{
+
+  text-align: center;
+
+  font-size: 2rem;
+
+  margin-bottom: 1rem;
+
+}
+
+.testimonial-section{
+
+    display: flex;
+
+    margin-top: 2rem;
+
+    gap: 40px;
+
+    width: 100%;
+
+    padding: 0 140px;
+
+    padding-bottom: 80px;
+
+    justify-content: center;
+
+    justify-items: center;
+    
+
+}
+
+.testimonial-card{
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    padding: 1.5rem;  
+          
+   gap: 100px;
+
+    width: 50%;          
+
+    border-radius: 12px;        
+
+    background-color: white;
+
+    transition: transform 0.3s ease;
+
+  
+
+}
+
+.testimonial-card:hover{
+
+    box-shadow: 0 4px 12px #560099;
+
+    transform: scale(1.05);
+
+}
+
+.testimonial-card p{
+
+    color: gray;
+
+}
+
+.star-png{
+
+    display: flex;
+
+    width: 1px;
+
+    height: 1px;
+
+    gap: 3px;
+
+    color: rgb(206, 193, 9);
+
+    padding-bottom: 1rem;
+
+}
+
+.star-png h3{
+
+    color: black;
+
+    position: relative;
+
+    bottom: 19px;
+
+    left: 3px;
+
+}
+
+
+.testimonial-card img{
+
+    border-radius: 50%;
+
+    width: 80px;
+
+    height: 80px;
+
+}
+
+.review-image{
+
+    display: flex;
+
+    gap: 13px;
+
+}
+
+ #testimonial{
+  position: relative;
+
+  justify-content: center;
+  align-items: center;
+   background-color: #f9f9ff;
+    width: 100%;
+
+}
+
+
+.slider{
+
+    position:absolute;
+
+    left: 40.25rem;
+
+    bottom: 0;
+
+    font-size: 60px;
+
+    color: white;
+   
+
+}
+
+
+.colored{
+
+    color: #560099;
+
+}
+
+
+#news-and-blogs{
+
+    margin: 0 auto;
+    
+
+}
+
+.blog-cards{
+
+    display: grid;
+
+    grid-template-columns: 200px 200px 200px;  
+
+    gap: 12px;
+    
+
+}
+
+.blog-card img{
+
+    width: 300px;
+
+    height: 200px;
+
+    border-radius: 12px;
+
+}
+
+.blog-cards{
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 2rem;
+
+  flex-wrap: wrap;
+
+}
+
+.blog-card{
+
+  background: white;
+
+  border-radius: 12px;
+
+  width: 300px;
+
+  transition: transform 0.3s ease;
+
+}
+
+.blog-card:hover{
+
+    box-shadow: 0 4px 12px #560099;
+
+    transform: scale(1.05);
+
+}
+
+.bold{
+
+    font-weight: bold;
+
+}
+
+.tag {
+
+  background: #560099;
+
+  color: white;
+
+  font-size: 0.9rem;
+
+  padding: 0.4rem 0.7rem;
+
+  border-radius: 6px;
+
+  position: relative;
+
+  top: -35px;
+
+  left: 0px;
+
+}
+
+.view-all-blogs{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25rem;
+
+}
+
+.view-blogs{
+
+    padding: 10px 20px;
+
+    background-color: #560099;
+
+    color: white;
+
+    border-radius: 25px;
+
+    border: none;
+
+    font-size: 1rem;
+
+}
+
+
+.view-all-blogs h3{
+
+    font-size: 40px;
+
+    padding: 0 0 0 16rem;
+   
+
+}
+
+
+.news-and-blogs-section{
+
+    padding: 2rem 0 0 16rem;
+
+    font-size: 1.5rem;
+  
+
+}
+
+
+.blog-card-info{
+
+    padding: 1rem;
+
+}
+
+.blog-card-info span{
+
+    color: gray;
+
+    font-size: 1.2rem;
+
+}
+
+.blog-card-info h4{
+
+    font-size: 1.2rem;
+
+}
+
+.view-blogs:hover{
+
+    color: #560099;
+
+    background-color: #f9f9ff;
+
+}
