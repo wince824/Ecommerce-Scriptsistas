@@ -1,894 +1,1224 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Flower Shop</title>
-      <link rel="stylesheet" href="styles.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-   </head>
-   <body>
-      <section class="contact-info">
-         <div class="contact-left">Call us: +254-114-532-154</div>
-         <div class="contact-center">
-            sign up and GET 20% OFF for your first order.
-            <a href="#" class="signup-link">sign up now</a>
-         </div>
-         <div class="bh-social">
-            <a href="http://facebook.com" class="facebook" >
-               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                  <path fill="#560099" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"/>
-               </svg>
-            </a>
-            <a href="http://X.com" class="twitter" >
-               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                  <path fill="none" stroke="#5C03A1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m13.081 10.712l-4.786-6.71a.6.6 0 0 0-.489-.252H5.28a.6.6 0 0 0-.488.948l6.127 8.59m2.162-2.576l6.127 8.59a.6.6 0 0 1-.488.948h-2.526a.6.6 0 0 1-.489-.252l-4.786-6.71m2.162-2.576l5.842-6.962m-8.004 9.538L5.077 20.25"/>
-               </svg>
-            </a>
-            <a href="http://pinterest.com" class="pinterest" >
-               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                  <path fill="#560099" fill-rule="evenodd" d="M3.421 8.447C3.797 4.73 7.19 1 12 1c3.328 0 5.656 1.261 7.045 3.181c1.34 1.853 1.67 4.13 1.444 5.999c-.196 1.625-.71 3.529-1.753 5.025c-1.09 1.562-2.815 2.726-5.203 2.487c-1.203-.12-2.096-.587-2.75-1.189a358 358 0 0 1-.702 2.044a181 181 0 0 0-1.153 3.412a1.5 1.5 0 0 1-2.856-.918c.33-1.024.745-2.23 1.175-3.475l.203-.591a153 153 0 0 0 1.491-4.495c-.07-.146-.149-.312-.228-.49a10 10 0 0 1-.379-.99c-.102-.325-.215-.764-.215-1.207c0-.904.21-1.802.793-2.468a2.45 2.45 0 0 1 2.41-.79c1.18.26 1.415 1.373 1.463 1.75c.062.49.006 1.037-.074 1.532c-.123.764-.358 1.694-.647 2.69a3.7 3.7 0 0 0 .26 1.06c.247.585.644 1.054 1.507 1.14c1.076.108 1.83-.339 2.444-1.218c.66-.946 1.072-2.315 1.236-3.669c.157-1.305-.098-2.777-.897-3.88C15.864 4.902 14.5 4 12 4C8.811 4 6.635 6.48 6.406 8.749c-.158 1.563.192 2.655.54 3.163a1.5 1.5 0 1 1-2.477 1.694c-.847-1.238-1.257-3.09-1.048-5.159" clip-rule="evenodd"/>
-               </svg>
-            </a>
-            <a href="http://instagram.com" class="insta">
-               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                  <path fill="#560099" d="M12.001 9a3 3 0 1 0 0 6a3 3 0 0 0 0-6m0-2a5 5 0 1 1 0 10a5 5 0 0 1 0-10m6.5-.25a1.25 1.25 0 0 1-2.5 0a1.25 1.25 0 0 1 2.5 0M12.001 4c-2.474 0-2.878.007-4.029.058c-.784.037-1.31.142-1.798.332a2.9 2.9 0 0 0-1.08.703a2.9 2.9 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.007 9.075 4 9.461 4 12c0 2.475.007 2.878.058 4.029c.037.783.142 1.31.331 1.797c.17.435.37.748.702 1.08c.337.336.65.537 1.08.703c.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.475 0 2.878-.007 4.029-.058c.782-.037 1.308-.142 1.797-.331a2.9 2.9 0 0 0 1.08-.703c.337-.336.538-.649.704-1.08c.19-.492.296-1.018.332-1.8c.052-1.103.058-1.49.058-4.028c0-2.474-.007-2.878-.058-4.029c-.037-.782-.143-1.31-.332-1.798a2.9 2.9 0 0 0-.703-1.08a2.9 2.9 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.926 4.006 14.54 4 12 4m0-2c2.717 0 3.056.01 4.123.06c1.064.05 1.79.217 2.427.465c.66.254 1.216.598 1.772 1.153a4.9 4.9 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.047 1.066.06 1.405.06 4.122s-.01 3.056-.06 4.122s-.218 1.79-.465 2.428a4.9 4.9 0 0 1-1.153 1.772a4.9 4.9 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465c-1.067.047-1.406.06-4.123.06s-3.056-.01-4.123-.06c-1.064-.05-1.789-.218-2.427-.465a4.9 4.9 0 0 1-1.772-1.153a4.9 4.9 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.012 15.056 2 14.717 2 12s.01-3.056.06-4.122s.217-1.79.465-2.428a4.9 4.9 0 0 1 1.153-1.772A4.9 4.9 0 0 1 5.45 2.525c.637-.248 1.362-.415 2.427-.465C8.945 2.013 9.284 2 12.001 2"/>
-               </svg>
-            </a>
-            <a href="http://youtube.com" class="youtube" >
-               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                  <g fill="none" fill-rule="evenodd">
-                     <path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/>
-                     <path fill="#560099" d="M12 4c.855 0 1.732.022 2.582.058l1.004.048l.961.057l.9.061l.822.064a3.8 3.8 0 0 1 3.494 3.423l.04.425l.075.91c.07.943.122 1.971.122 2.954s-.052 2.011-.122 2.954l-.075.91l-.04.425a3.8 3.8 0 0 1-3.495 3.423l-.82.063l-.9.062l-.962.057l-1.004.048A62 62 0 0 1 12 20a62 62 0 0 1-2.582-.058l-1.004-.048l-.961-.057l-.9-.062l-.822-.063a3.8 3.8 0 0 1-3.494-3.423l-.04-.425l-.075-.91A41 41 0 0 1 2 12c0-.983.052-2.011.122-2.954l.075-.91l.04-.425A3.8 3.8 0 0 1 5.73 4.288l.821-.064l.9-.061l.962-.057l1.004-.048A62 62 0 0 1 12 4m-2 5.575v4.85c0 .462.5.75.9.52l4.2-2.425a.6.6 0 0 0 0-1.04l-4.2-2.424a.6.6 0 0 0-.9.52Z"/>
-                  </g>
-               </svg>
-            </a>
-         </div>
-      </section>
-      <nav class="navbar" role="navigation" aria-label="Main navigation">
-         <div class="nav-left">
-            <img id="flower" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiIgdmlld0JveD0iMCAwIDI2IDI2Ij48ZyBmaWxsPSJub25lIj48ZGVmcz48bWFzayBpZD0iU1ZHVGRWTEZkdEsiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0wIDBoMjZ2MjZIMHoiLz48ZyBmaWxsPSIjMDAwIj48cGF0aCBkPSJNMTYgMTNhMyAzIDAgMSAxLTYgMGEzIDMgMCAwIDEgNiAwIi8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTguOTQ0IDE2LjM3MWEzLjUwMiAzLjUwMiAwIDAgMCAwLTYuNzQyUTE5IDkuMzE5IDE5IDlhMy41IDMuNSAwIDAgMC02LTIuNDVhMy41IDMuNSAwIDAgMC01Ljk0NCAzLjA3OGEzLjUwMiAzLjUwMiAwIDAgMCAwIDYuNzQzQTMuNSAzLjUgMCAwIDAgMTMgMTkuNDVhMy41IDMuNSAwIDAgMCA1Ljk0NC0zLjA3OG0tMS4wOTEtNi41MjNhLjUuNSAwIDAgMCAuNDE3LjY2NmEyLjUgMi41IDAgMCAxIDAgNC45NzJhLjUuNSAwIDAgMC0uNDE3LjY2NnEuMTQ2LjQwNy4xNDcuODQ4YTIuNSAyLjUgMCAwIDEtNC41ODQgMS4zODJhLjUuNSAwIDAgMC0uODMyIDBhMi41IDIuNSAwIDAgMS00LjQzNi0yLjIzYS41LjUgMCAwIDAtLjQxOC0uNjY2YTIuNSAyLjUgMCAwIDEgMC00Ljk3MmEuNS41IDAgMCAwIC40MTctLjY2NmEyLjUgMi41IDAgMCAxIDQuNDM2LTIuMjNhLjUuNSAwIDAgMCAuODMzIDBhMi41IDIuNSAwIDAgMSA0LjQzNiAyLjIzIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L2c+PC9tYXNrPjwvZGVmcz48Y2lyY2xlIGN4PSIxMyIgY3k9IjEzIiByPSIxMyIgZmlsbD0iIzU2MDA5OSIgbWFzaz0idXJsKCNTVkdUZFZMRmR0SykiLz48L2c+PC9zdmc+ " alt="Flower Shop logo">
-            <span class="site-title">Flower Shop</span>
-         </div>
-         <div class="nav-center" id="main-nav">
-            <ul class="navbar-details">
-               <li><a class="nav-link" href="#home">Home</a></li>
-               <li><a class="nav-link" href="#shop">Shop</a></li>
-               <li><a class="nav-link" href="#occasions">Occasions</a></li>
-               <li><a class="nav-link" href="#about">About</a></li>
-               <li><a class="nav-link" href="#contact">Contact</a></li>
-               <li><a class="nav-link" href="#blogs">Blogs</a></li>
-            </ul>
-         </div>
-         <div class="nav-right">
-            <button class="icon-btn" aria-label="Search"><i class="fa fa-search"></i></button>
-            <button class="icon-btn" aria-label="Favorites"><i class="fa fa-heart"></i></button>
-            <div class="cart-wrap">
-               <button class="icon-btn" id="cart-btn" aria-label="Cart">
-               <i class="fa fa-shopping-bag"></i>
-               </button>
-            </div>
-            <button class="icon-btn" aria-label="Profile"><i class="fa fa-user"></i></button>
-         </div>
-      </nav>
-      <section class="hero">
-         <div class="hero-content">
-            <span class="eyebrow">
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZyBmaWxsPSJub25lIj48cGF0aCBkPSJNMTIgMjJjNS41MjMgMCAxMC00LjQxNyAxMC0xMGMwLTMuNDQ0LTIuODItOC45MDgtNi40NDQtOC44NjljLTIuMjIzIDAtMi42NjcgMy44MTktMi42NjcgMy44MTljLjM0NC0zLjgxOS0yLjczNS01LjM2Ni01Ljg5MS0zLjU5OEMzLjk4IDUuMDQyIDIgOC4yMTcgMiAxMmMwIDUuMDM1IDMuNjQxIDkuMTAxIDguNDA3IDkuODcyUTExLjE4NiAyMiAxMiAyMiIvPjxwYXRoIHN0cm9rZT0iIzUzMDA5RiIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMTQuNDQ0IDExLjY2N2MtLjc2Mi0uMTMzLTEuNzY1LS4wNC0yLjQ0NC4zMzNjLTEuNDczLjgxMi0yLjI0OSAyLjY4LTIuMzE4IDQuNjA5Yy0uMDU3IDEuNi4yMTggMy4zMjEuNTc3IDQuNzJtNC4xODUtOS42NjJjLjM5OS0xLjQxIDEuOTU3LTIuNTkzIDMuNTU2LTIuOTg1YzIuMzctLjU4MiAzLjk3Mi45OCA0IDMuMzE4YzAtMy40NDQtMi44Mi04LjkwOC02LjQ0NC04Ljg2OWMtMS4zOTIgMC0yLjA4NiAxLjQ5Ny0yLjQxMSAyLjYxN20xLjMgNS45MTljLjI1LTEuMTk0LjI4LTIuMDIgMC0yLjc1OGMtLjIzMy0uNjEtLjY3OC0xLjE2LTEuMzg5LTEuODA5bC0uMTY3LS4xNWMuMzQ0LTMuODE5LTIuNzM1LTUuMzY2LTUuODkxLTMuNTk4QzMuOTggNS4wNDIgMiA4LjIxNyAyIDEyYzAgNS4wMzUgMy42NDEgOS4xMDEgOC40MDcgOS44NzJRMTEuMTg2IDIyIDEyIDIyYzUuNDM2IDAgOS45NDctNC40NyAxMC05Ljl2LS4wMTJNNi44ODkgOC44NzZMMTAgNS44MjZtNy44NzUgMi42NDZMMTcgN20tNi4xIDE0LjMzbDcuNTQ0LTguMzE1TTE0LjQzMSAxNi43bC4wMTMtMS44ODhtLTUuMjIyIDEuMjkxTDYgMTIuNTY1bTUuOTY3LS44MTVjLS4yMzctLjk1Mi0xLjY5NC0yLjQ1OC0zLjUyMy0xLjQzYy0uNzM2LS40NTktMS40MDEtLjc4OC0yLTEuMDA5Yy0yLjAwMS0uNzM4LTMuMjUxLS40MDQtMy44OTguNTM5bC0uMDM0LjA1Ii8+PC9nPjwvc3ZnPg==" alt="" />
-            Your Trusted Online Flower Shop
-            </span>
-            <h6 class="hero-title">
-               The Ultimate <span class="message">Flower<br/>Shopping Destination</span>
-            </h6>
-            <p class="sub">
-               Beautifully arranged bouquets delivered fresh — perfect for birthdays, anniversaries, weddings and everyday moments. Free same-day delivery on selected areas.
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower Shop</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="contact-info">
+      <div class="contact-left">Call us: +254-114-532-154</div>
+      <div class="contact-center">
+        sign up and GET 20% OFF for your first order.
+        <a href="#" class="signup-link">sign up now</a>
+      </div>
+      <div class="bh-social">
+        <a href="http://facebook.com" class="facebook">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="#560099"
+              d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"
+            />
+          </svg>
+        </a>
+        <a href="http://X.com" class="twitter">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="none"
+              stroke="#5C03A1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="m13.081 10.712l-4.786-6.71a.6.6 0 0 0-.489-.252H5.28a.6.6 0 0 0-.488.948l6.127 8.59m2.162-2.576l6.127 8.59a.6.6 0 0 1-.488.948h-2.526a.6.6 0 0 1-.489-.252l-4.786-6.71m2.162-2.576l5.842-6.962m-8.004 9.538L5.077 20.25"
+            />
+          </svg>
+        </a>
+        <a href="http://pinterest.com" class="pinterest">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="#560099"
+              fill-rule="evenodd"
+              d="M3.421 8.447C3.797 4.73 7.19 1 12 1c3.328 0 5.656 1.261 7.045 3.181c1.34 1.853 1.67 4.13 1.444 5.999c-.196 1.625-.71 3.529-1.753 5.025c-1.09 1.562-2.815 2.726-5.203 2.487c-1.203-.12-2.096-.587-2.75-1.189a358 358 0 0 1-.702 2.044a181 181 0 0 0-1.153 3.412a1.5 1.5 0 0 1-2.856-.918c.33-1.024.745-2.23 1.175-3.475l.203-.591a153 153 0 0 0 1.491-4.495c-.07-.146-.149-.312-.228-.49a10 10 0 0 1-.379-.99c-.102-.325-.215-.764-.215-1.207c0-.904.21-1.802.793-2.468a2.45 2.45 0 0 1 2.41-.79c1.18.26 1.415 1.373 1.463 1.75c.062.49.006 1.037-.074 1.532c-.123.764-.358 1.694-.647 2.69a3.7 3.7 0 0 0 .26 1.06c.247.585.644 1.054 1.507 1.14c1.076.108 1.83-.339 2.444-1.218c.66-.946 1.072-2.315 1.236-3.669c.157-1.305-.098-2.777-.897-3.88C15.864 4.902 14.5 4 12 4C8.811 4 6.635 6.48 6.406 8.749c-.158 1.563.192 2.655.54 3.163a1.5 1.5 0 1 1-2.477 1.694c-.847-1.238-1.257-3.09-1.048-5.159"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </a>
+        <a href="http://instagram.com" class="insta">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="#560099"
+              d="M12.001 9a3 3 0 1 0 0 6a3 3 0 0 0 0-6m0-2a5 5 0 1 1 0 10a5 5 0 0 1 0-10m6.5-.25a1.25 1.25 0 0 1-2.5 0a1.25 1.25 0 0 1 2.5 0M12.001 4c-2.474 0-2.878.007-4.029.058c-.784.037-1.31.142-1.798.332a2.9 2.9 0 0 0-1.08.703a2.9 2.9 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.007 9.075 4 9.461 4 12c0 2.475.007 2.878.058 4.029c.037.783.142 1.31.331 1.797c.17.435.37.748.702 1.08c.337.336.65.537 1.08.703c.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.475 0 2.878-.007 4.029-.058c.782-.037 1.308-.142 1.797-.331a2.9 2.9 0 0 0 1.08-.703c.337-.336.538-.649.704-1.08c.19-.492.296-1.018.332-1.8c.052-1.103.058-1.49.058-4.028c0-2.474-.007-2.878-.058-4.029c-.037-.782-.143-1.31-.332-1.798a2.9 2.9 0 0 0-.703-1.08a2.9 2.9 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.926 4.006 14.54 4 12 4m0-2c2.717 0 3.056.01 4.123.06c1.064.05 1.79.217 2.427.465c.66.254 1.216.598 1.772 1.153a4.9 4.9 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.047 1.066.06 1.405.06 4.122s-.01 3.056-.06 4.122s-.218 1.79-.465 2.428a4.9 4.9 0 0 1-1.153 1.772a4.9 4.9 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465c-1.067.047-1.406.06-4.123.06s-3.056-.01-4.123-.06c-1.064-.05-1.789-.218-2.427-.465a4.9 4.9 0 0 1-1.772-1.153a4.9 4.9 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.012 15.056 2 14.717 2 12s.01-3.056.06-4.122s.217-1.79.465-2.428a4.9 4.9 0 0 1 1.153-1.772A4.9 4.9 0 0 1 5.45 2.525c.637-.248 1.362-.415 2.427-.465C8.945 2.013 9.284 2 12.001 2"
+            />
+          </svg>
+        </a>
+        <a href="http://youtube.com" class="youtube">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <g fill="none" fill-rule="evenodd">
+              <path
+                d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+              />
+              <path
+                fill="#560099"
+                d="M12 4c.855 0 1.732.022 2.582.058l1.004.048l.961.057l.9.061l.822.064a3.8 3.8 0 0 1 3.494 3.423l.04.425l.075.91c.07.943.122 1.971.122 2.954s-.052 2.011-.122 2.954l-.075.91l-.04.425a3.8 3.8 0 0 1-3.495 3.423l-.82.063l-.9.062l-.962.057l-1.004.048A62 62 0 0 1 12 20a62 62 0 0 1-2.582-.058l-1.004-.048l-.961-.057l-.9-.062l-.822-.063a3.8 3.8 0 0 1-3.494-3.423l-.04-.425l-.075-.91A41 41 0 0 1 2 12c0-.983.052-2.011.122-2.954l.075-.91l.04-.425A3.8 3.8 0 0 1 5.73 4.288l.821-.064l.9-.061l.962-.057l1.004-.048A62 62 0 0 1 12 4m-2 5.575v4.85c0 .462.5.75.9.52l4.2-2.425a.6.6 0 0 0 0-1.04l-4.2-2.424a.6.6 0 0 0-.9.52Z"
+              />
+            </g>
+          </svg>
+        </a>
+      </div>
+    </section>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="nav-left">
+        <img
+          id="flower"
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiIgdmlld0JveD0iMCAwIDI2IDI2Ij48ZyBmaWxsPSJub25lIj48ZGVmcz48bWFzayBpZD0iU1ZHVGRWTEZkdEsiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0wIDBoMjZ2MjZIMHoiLz48ZyBmaWxsPSIjMDAwIj48cGF0aCBkPSJNMTYgMTNhMyAzIDAgMSAxLTYgMGEzIDMgMCAwIDEgNiAwIi8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTguOTQ0IDE2LjM3MWEzLjUwMiAzLjUwMiAwIDAgMCAwLTYuNzQyUTE5IDkuMzE5IDE5IDlhMy41IDMuNSAwIDAgMC02LTIuNDVhMy41IDMuNSAwIDAgMC01Ljk0NCAzLjA3OGEzLjUwMiAzLjUwMiAwIDAgMCAwIDYuNzQzQTMuNSAzLjUgMCAwIDAgMTMgMTkuNDVhMy41IDMuNSAwIDAgMCA1Ljk0NC0zLjA3OG0tMS4wOTEtNi41MjNhLjUuNSAwIDAgMCAuNDE3LjY2NmEyLjUgMi41IDAgMCAxIDAgNC45NzJhLjUuNSAwIDAgMC0uNDE3LjY2NnEuMTQ2LjQwNy4xNDcuODQ4YTIuNSAyLjUgMCAwIDEtNC41ODQgMS4zODJhLjUuNSAwIDAgMC0uODMyIDBhMi41IDIuNSAwIDAgMS00LjQzNi0yLjIzYS41LjUgMCAwIDAtLjQxOC0uNjY2YTIuNSAyLjUgMCAwIDEgMC00Ljk3MmEuNS41IDAgMCAwIC40MTctLjY2NmEyLjUgMi41IDAgMCAxIDQuNDM2LTIuMjNhLjUuNSAwIDAgMCAuODMzIDBhMi41IDIuNSAwIDAgMSA0LjQzNiAyLjIzIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L2c+PC9tYXNrPjwvZGVmcz48Y2lyY2xlIGN4PSIxMyIgY3k9IjEzIiByPSIxMyIgZmlsbD0iIzU2MDA5OSIgbWFzaz0idXJsKCNTVkdUZFZMRmR0SykiLz48L2c+PC9zdmc+ "
+          alt="Flower Shop logo"
+        />
+        <span class="site-title">Flower Shop</span>
+      </div>
+      <div class="nav-center" id="main-nav">
+        <ul class="navbar-details">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#shop">Shop</a></li>
+          <li><a class="nav-link" href="#occasions">Occasions</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li><a class="nav-link" href="#blogs">Blogs</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <button class="icon-btn" aria-label="Search">
+          <i class="fa fa-search"></i>
+        </button>
+        <button class="icon-btn" aria-label="Favorites">
+          <i class="fa fa-heart"></i>
+        </button>
+        <div class="cart-wrap">
+          <button class="icon-btn" id="cart-btn" aria-label="Cart">
+            <i class="fa fa-shopping-bag"></i>
+          </button>
+        </div>
+        <button class="icon-btn" aria-label="Profile">
+          <i class="fa fa-user"></i>
+        </button>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZyBmaWxsPSJub25lIj48cGF0aCBkPSJNMTIgMjJjNS41MjMgMCAxMC00LjQxNyAxMC0xMGMwLTMuNDQ0LTIuODItOC45MDgtNi40NDQtOC44NjljLTIuMjIzIDAtMi42NjcgMy44MTktMi42NjcgMy44MTljLjM0NC0zLjgxOS0yLjczNS01LjM2Ni01Ljg5MS0zLjU5OEMzLjk4IDUuMDQyIDIgOC4yMTcgMiAxMmMwIDUuMDM1IDMuNjQxIDkuMTAxIDguNDA3IDkuODcyUTExLjE4NiAyMiAxMiAyMiIvPjxwYXRoIHN0cm9rZT0iIzUzMDA5RiIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMTQuNDQ0IDExLjY2N2MtLjc2Mi0uMTMzLTEuNzY1LS4wNC0yLjQ0NC4zMzNjLTEuNDczLjgxMi0yLjI0OSAyLjY4LTIuMzE4IDQuNjA5Yy0uMDU3IDEuNi4yMTggMy4zMjEuNTc3IDQuNzJtNC4xODUtOS42NjJjLjM5OS0xLjQxIDEuOTU3LTIuNTkzIDMuNTU2LTIuOTg1YzIuMzctLjU4MiAzLjk3Mi45OCA0IDMuMzE4YzAtMy40NDQtMi44Mi04LjkwOC02LjQ0NC04Ljg2OWMtMS4zOTIgMC0yLjA4NiAxLjQ5Ny0yLjQxMSAyLjYxN20xLjMgNS45MTljLjI1LTEuMTk0LjI4LTIuMDIgMC0yLjc1OGMtLjIzMy0uNjEtLjY3OC0xLjE2LTEuMzg5LTEuODA5bC0uMTY3LS4xNWMuMzQ0LTMuODE5LTIuNzM1LTUuMzY2LTUuODkxLTMuNTk4QzMuOTggNS4wNDIgMiA4LjIxNyAyIDEyYzAgNS4wMzUgMy42NDEgOS4xMDEgOC40MDcgOS44NzJRMTEuMTg2IDIyIDEyIDIyYzUuNDM2IDAgOS45NDctNC40NyAxMC05Ljl2LS4wMTJNNi44ODkgOC44NzZMMTAgNS44MjZtNy44NzUgMi42NDZMMTcgN20tNi4xIDE0LjMzbDcuNTQ0LTguMzE1TTE0LjQzMSAxNi43bC4wMTMtMS44ODhtLTUuMjIyIDEuMjkxTDYgMTIuNTY1bTUuOTY3LS44MTVjLS4yMzctLjk1Mi0xLjY5NC0yLjQ1OC0zLjUyMy0xLjQzYy0uNzM2LS40NTktMS40MDEtLjc4OC0yLTEuMDA5Yy0yLjAwMS0uNzM4LTMuMjUxLS40MDQtMy44OTguNTM5bC0uMDM0LjA1Ii8+PC9nPjwvc3ZnPg=="
+            alt=""
+          />
+          Your Trusted Online Flower Shop
+        </span>
+        <h6 class="hero-title">
+          The Ultimate
+          <span class="message">Flower<br />Shopping Destination</span>
+        </h6>
+        <p class="sub">
+          Beautifully arranged bouquets delivered fresh — perfect for birthdays,
+          anniversaries, weddings and everyday moments. Free same-day delivery
+          on selected areas.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-shop" href="#shop">Shop Now ➜</a>
+          <a class="products" href="#products">View All Products</a>
+        </div>
+        <div class="ratings">
+          <div class="stars">
+            <img
+              src="https://randomuser.me/api/portraits/women/1.jpg"
+              alt="customer 1"
+            />
+            <img
+              src="https://randomuser.me/api/portraits/men/2.jpg"
+              alt="customer 2"
+            />
+            <img
+              src="https://randomuser.me/api/portraits/women/3.jpg"
+              alt="customer 3"
+            />
+            <img
+              src="https://randomuser.me/api/portraits/men/4.jpg"
+              alt="customer 4"
+            />
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48Y2lyY2xlIGN4PSIyNCIgY3k9IjI0IiByPSIyMSIgZmlsbD0iI0ZBOTFFNyIvPjxnIGZpbGw9IiMwMDAiPjxwYXRoIGQ9Ik0yMSAxNGg2djIwaC02eiIvPjxwYXRoIGQ9Ik0xNCAyMWgyMHY2SDE0eiIvPjwvZz48L3N2Zz4="
+              alt="customer 5"
+            />
+          </div>
+          <div class="rate">
+            <span>4.9+ Ratings</span>
+            <p>Trusted by 95K+ Customers</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img
+          class="main-image"
+          src="./hero-image2.png"
+          alt="Woman holding a bouquet of flowers"
+        />
+        <div class="feature feature-left">
+          <i class="fa fa-truck"></i>
+          <span>Fast Delivery</span>
+        </div>
+        <div class="feature feature-right">
+          <i class="fa fa-lock"></i>
+          <span>Secure Payment</span>
+        </div>
+        <div class="feature feature-right extra">
+          <img src="./images/badge-image.png" alt="badge" />
+        </div>
+      </div>
+    </section>
+    <section class="occasions" id="occasions">
+      <h4>occasions</h4>
+      <h2>Shop by Occasions</h2>
+      <div class="occasion-grid">
+        <div class="occasion-card">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0NTQiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNDU0IDUxMiI+PHBhdGggZmlsbD0iI0ZGOTZEMyIgZD0ibTI0Ny42NTYgOTguMjg0bDcxLjQzMS01NS4yNjhsMzEuNjkzIDE2LjIyN2wtNC4yMjMgOTIuOTR6TTE4Ni44MiAzMTcuODQ4bDE0MC44ODYtMTQ3LjM4NmwtOTkuMjYtNTQuMjQ3ek00MjQuMDY4IDk2Ljc2N2wtNTEuMTAyLTI2LjE2NGwtNC4yNTQgOTMuNjU0bDg0LjMxNCA0NS45NXptLTY1LjA0IDg4LjA0MUwyMTkuMjEzIDMxOS4zNTFsMTI2LjQwMy02MC43ODVjMjMuMDczIDYwLjQ3NSAxMC4wMDkgMTMzLjczLTQ2LjE5MyAxODFjLTk0LjQzNSA3OS40MjYtMjQwLjM1MiAyNi40MDMtMjYyLjAyLTk1LjIxM0MyMi4wNTggMjU4LjIyIDc3LjEyIDE4My4wNDUgMTUxLjc5OSAxNjEuNDg3bDIxLjQ0OSAxMzAuNDY0bDI5LjgwNy0xOTAuMzAybC03My4yMjgtNDEuNzUxbDE0LjU5MyA2Ny40NjlDNTIuNDk5IDE1Mi43NTQtMTUuNjc1IDI0NC44MDcgMy4xMzYgMzUwLjM5QzI5LjQ5IDQ5OC4zMDYgMjA2Ljk2MSA1NjIuNzk1IDMyMS44MTggNDY2LjE5MmM2OC4zMzgtNTcuNDc3IDg0LjI3NC0xNDYuNTYgNTYuMjQxLTIyMC4xMDNsNTQuNzY5LTIxLjA2MnpNMjk2Ljc4NCAzMS41OTdMMjM1LjA3MSAwbC05Mi40MDcgNDEuMDY1bDgzLjI0NiA0NS4zNjh6Ii8+PC9zdmc+"
+            alt="weddings"
+          />
+          <div id="weddings">
+            <p>
+              <strong>weddings</strong> <br />
+              <span>42 Products</span>
             </p>
-            <div class="cta-row">
-               <a class="btn btn-shop" href="#shop">Shop Now ➜</a>
-               <a class="products" href="#products">View All Products</a>
-            </div>
-            <div class="ratings">
-               <div class="stars">
-                  <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="customer 1">
-                  <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="customer 2">
-                  <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="customer 3">
-                  <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="customer 4">
-                  <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48Y2lyY2xlIGN4PSIyNCIgY3k9IjI0IiByPSIyMSIgZmlsbD0iI0ZBOTFFNyIvPjxnIGZpbGw9IiMwMDAiPjxwYXRoIGQ9Ik0yMSAxNGg2djIwaC02eiIvPjxwYXRoIGQ9Ik0xNCAyMWgyMHY2SDE0eiIvPjwvZz48L3N2Zz4=" alt="customer 5">
-               </div>
-               <div class="rate">
-                  <span>4.9+ Ratings</span>
-                  <p>Trusted by 95K+ Customers</p>
-               </div>
-            </div>
-         </div>
-         <div class="hero-visual">
-            <img  class="main-image" src="./hero-image2.png" alt="Woman holding a bouquet of flowers">
-            <div class="feature feature-left">
-               <i class="fa fa-truck"></i>
-               <span>Fast Delivery</span>
-            </div>
-            <div class="feature feature-right">
-               <i class="fa fa-lock" ></i>
-               <span>Secure Payment</span>
-            </div>
-            <div class="feature feature-right extra">
-               <img src="./badge-image.png" alt="badge">
-            </div>
-         </div>
+          </div>
+        </div>
+        <div class="occasion-card">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCI+PHBhdGggZmlsbD0iIzZDM0FCOCIgZD0iTTE2LjQgMzEuNzNzLTYuNDUuNTEtNy4zMSAxLjk2Yy0uODcgMS40NS0uOTIgMy42OC0uOTIgNi4xM2MwIDIuNDYtLjEgOC4xLS4xIDguMWwxLjU0IDMuMzFzLjI5IDQyLjE5LjI5IDQzLjVjMCAxLjMgMCAyLjg5IDEuODggMy45czQ5LjY2IDI0LjA5IDUxLjE1IDI0LjcxYzIuMjUuOTMgMy4zMi41OCAzLjMyLjU4bDUzLjA5LTg4Ljc5cy0uMTctMi40My0yLjM4LTMuMDFjLTEuMjctLjMyLTEwMC41Ni0uMzktMTAwLjU2LS4zOSIvPjxwYXRoIGZpbGw9IiM2QzNBQjgiIGQ9Ik02NS42OCA2MC45MmMtLjgxIDIuMjMtLjQ0IDI1LjI5LS4zIDQyLjA2Yy4xNCAxNi43Ni0uNDMgMjAuMjMgMCAyMC44MXMxLjYuMDIgNC45MS0xLjQ1YzYuMTUtMi43MiAzNS42OS0xNy4zNCAzNy44Ni0xOC42NHM3LjQ3LTMuOTkgOC4zNC01LjQ0czEuMzQtMTQuOTQgMS42My0yNS43N2MuMjktMTAuODQuNTgtMTkuNTEuNTgtMTkuNTFsMS4zLTMuOXMtLjI4LTEwLjU0LS4zMy0xMS43Yy0uMDktMS45Mi0uMy0yLjkxLS43OS0yLjY3Yy0uNy4zMy02LjU0IDUuMTItMjIgMTIuNjRjLTkuNzEgNC43MS0zMC42NCAxMi4wMy0zMS4yIDEzLjU3Ii8+PHBhdGggZmlsbD0iIzZDM0FCOCIgZD0iTTY1LjgyIDExLjIxYy00LjMzLS4yLTE2LjE4IDYuNjUtMjcuNiAxMC40UzkuNTYgMzIuOSA5LjQxIDMzLjM0Yy0uMTQuNDMgNi45NCAzLjYgMTEuNDYgNS43N2M1LjM3IDIuNTcgMjUuODcgMTIuMjggMjkuNjIgMTMuODdjMy43NiAxLjU5IDEyLjcyIDUuMzEgMTQuMTYgNS4yYzIuMDItLjE0IDIxLjEtNy42NiAzMC43OC0xMi4yOHMyMS43OC0xMS43OCAyMS45NC0xMy41MmMuMDctLjc4LTE3LjgtNy40NS0yNi43MS0xMS40OGMtMTcuMi03Ljc5LTIxLjY3LTkuNTQtMjQuODQtOS42OSIvPjxwYXRoIGZpbGw9IiM2QzNBQjgiIGQ9Ik04LjEyIDQ5Ljc3Yy4xNSAxLjg4IDEuMTggMi41NSAzLjggMy42OXM1Mi4xNSAyNi44NyA1My4yOSAyNi44N3MxLjQ4LTQuMDguMjMtMy45N2MtLjY4LjA2LTE2Ljk1LTcuNjctMzIuMTUtMTUuMzlDMjAuMzkgNTQuNDMgOC4wNCA0Ny45IDguMDQgNDcuOXoiLz48cGF0aCBmaWxsPSIjNkMzQUI4IiBkPSJNMTIwLjAxIDQ4Ljk5UzY3LjEyIDc1Ljg5IDY2LjYgNzYuMTVzLTEuMzUuMTctMS4zNS4xN2wtLjA0IDQuMDFzLjQ5LjExIDEuMDQtLjA2Yy4zMi0uMSA1Mi4yMy0yNi45NyA1Mi40Ni0yNy4wNXMxLjIzLS42OCAxLjQ0LTEuOTVjLjE4LTEuMDItLjE0LTIuMjgtLjE0LTIuMjgiLz48cGF0aCBmaWxsPSIjRjA2REJCIiBkPSJtMjguODYgOTcuNDJsMTAuMzUgMTUuNGw0LjUzIDEuNTVzLjM3LTE2LjguNTItMjkuMjVjLjIxLTE4LjE5LjEzLTM0Ljc4LjM5LTM1LjcyYy40My0xLjU5IDIwLjU2LTguMTIgMjAuNTYtOC4xMlM4Ny45NSA0OC40MSA4OC42NyA1MGMuMzIuNy4wNyAxMi40OCAwIDI2LjIxYy0uMDkgMTcuMzQtLjA2IDM3LjM2LS4wNiAzNy4zNnMyLjM1LS4wMSAyLjYzLS44OGMuMjktLjg3IDEuNDUtNy41OCAxLjQ1LTcuNThsOC44Mi01OC43OWw0LjQ4LTUuNzhsLTYuMjItMTEuODRsLTI1LjUyLTEyLjU2bC04Ljc3IDEuOTdsLTkuNDktMS40NWwtMzAuMSAyMS42M2wzLjUxIDcuMTJsOC42MSA0LjM5eiIvPjxwYXRoIGZpbGw9IiNGMDZEQkIiIGQ9Ik05MS4yOCA0OS4zOWMtLjU1IDEuMjEtLjIzIDYzLjU2LS4yMyA2My41NnMyLjc1LTEuNTIgNi4yOS0zLjIyYzMuNTItMS42OSA2LjA1LTIuNzQgNi4yNy0zLjYycy42MS02Mi41NC42MS02Mi41NHoiLz48cGF0aCBmaWxsPSIjRjA2REJCIiBkPSJNNDEuMzUgNDguMWMuMzMuMzYtLjIxIDY1LjA2LS44OCA2NS4yMWMtLjUzLjEzLTEyLjU4LTUuMjUtMTIuNTgtNS44cy45Ny02Mi4zOC45Ny02Mi4zOFM0MC4zNyA0NyA0MS4zNSA0OC4xbTIzLjg4LTMzLjg1Yy0zLjMzIDAtNy4wMS45NS04LjA4IDMuNzRzLTEuMzEgNi45NC0xLjMxIDEwLjA0YzAgMi45Ny0uNDggMTAuNTcgOC42NyAxMC40NXM5LjQyLTMuNTEgOS41Ni0xMC45OWMuMTItNi4yNC0uNzEtOS4yNy0xLjU0LTEwLjU3Yy0uNzQtMS4xNy0zLjItMi42Ny03LjMtMi42NyIvPjxwYXRoIGZpbGw9IiNGMDZEQkIiIGQ9Ik01OS45NCAyOS42OWMyLjA4LjEyIDIuOTctNC40NSA0LjU3LTYuOTVjMS42LTIuNDkgMy4yNy00LjE2IDIuNjctNS40NmMtLjQ5LTEuMDgtNC44NC0xLjQzLTcuMTkgMS44NGMtMS42NSAyLjMxLTEuOTQgMTAuNDYtLjA1IDEwLjU3Ii8+PHBhdGggZmlsbD0iI0YwNkRCQiIgZD0iTTczLjMzIDE2LjQyczIuOTUgMyAzLjcyIDguODhzLS4xMiAxMC40NS0uMTIgMTAuNDVzMTQuNjYtLjQ0IDE5LjcyLjUzYzQuOTkuOTcgNi43MyAzLjE3IDYuNzMgNC43N3MtMy4yOCAyLjg5LTYuNjEgMi42NXMtNS41OC0uNDItNiAuNDJzLjE4IDIuMTQgNC44MSAyLjQ5YzQuNjMuMzYgOS45OC0uMyAxMS42NC02LjA2czEuNzItMTUuNzQgMS4xMy0yMi45M3MtMS44OS0xMS4zLTUuMTEtMTIuODZjLTMuMzktMS42My0xMS44OC0xLjktMTkuOSAyLjYxcy0xMC4wMSA5LjA1LTEwLjAxIDkuMDUiLz48cGF0aCBmaWxsPSIjRjA2REJCIiBkPSJNODkuOTQgOS41OGMtMS4wNC0xLjM0LTQuMzktMS4zLTYuMTguNzdjLTEuOSAyLjItMi4zMiAxMC41Ny4xMiAxMS4wNWMyLjc2LjU0IDIuMjYtMy45OCA0LjI4LTYuNzdjMS45OC0yLjczIDIuNzktMy43NCAxLjc4LTUuMDUiLz48cGF0aCBmaWxsPSIjRjA2REJCIiBkPSJNNTYuMzggMTYuNzFTNDUuMTUgMy42MiAzMi4zMiAzLjgyYy03LjcyLjEyLTkuNjggNC41Ny0xMC4xIDYuNDFzLTMuNjIgMjAuMTQuNjUgMzAuMDVTMzYgNDcuNjIgMzcuMzkgNDcuM2MxLjc4LS40MiA1LjU3LTEuNzIgNS4yMS0zLjA5cy0xMi45NSAzLjU2LTEzLjA3LTIuMDhzOC45MS02LjI0IDEzLjA3LTYuMzZzMTEuMjkuODMgMTEuMjkuODNzLTEuMjUtNi44My0uNDItMTEuN3MyLjkxLTguMTkgMi45MS04LjE5Ii8+PHBhdGggZmlsbD0iI0YwNkRCQiIgZD0iTTI4Ljg4IDguNTdjLTEuNiAxLjY2LTIuMjYgMTEuMjMtMS4yNSAxNS45OHMxLjkgNi43NyAzLjk4IDYuMzZjMS43NC0uMzUgMi43OS05LjY3IDMuNjItMTIuOTVjLjg5LTMuNSAzLjA5LTcuMjIgMi4yLTguODVjLTEuMzYtMi41LTYuODgtMi4yNy04LjU1LS41NCIvPjwvc3ZnPg=="
+            alt="Birthday"
+          />
+          <div id="birthday">
+            <p>
+              <strong>Birthday</strong><br />
+              <span>56 Products</span>
+            </p>
+          </div>
+        </div>
+        <div class="occasion-card">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48ZyBmaWxsPSJub25lIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiPjxwYXRoIGZpbGw9IiM4MjRBQ0YiIHN0cm9rZT0iIzIzMWYyMCIgZD0iTTI3LjggMi43QTEyLjE2IDEyLjE2IDAgMCAwIDIwIDUuMTFhMTIuMTYgMTIuMTYgMCAwIDAtNy44LTIuNDFDNC40IDIuNy41IDcuMzguNSAxNC40YzAgMTAuNzkgMTAgMTguMjcgMTcuNjIgMjIuNDJhMy45MiAzLjkyIDAgMCAwIDMuNzYgMEMyOS41NSAzMi42NyAzOS41IDI1LjE5IDM5LjUgMTQuNGMwLTcuMDItMy45LTExLjctMTEuNy0xMS43WiIgc3Ryb2tlLXdpZHRoPSIxIi8+PHBhdGggc3Ryb2tlPSIjMDAwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIGQ9Ik0yOC4zNiA2LjcxYzQuMzgtLjQ2IDUuOTEgMiA2LjU0IDMuNzYiIHN0cm9rZS13aWR0aD0iMSIvPjwvZz48L3N2Zz4="
+            alt="Anniversary"
+          />
+          <div id="anniversary">
+            <p>
+              <strong>Anniversary</strong><br />
+              <span>11 Products</span>
+            </p>
+          </div>
+        </div>
+        <div class="occasion-card">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiIgdmlld0JveD0iMCAwIDM2IDM2Ij48cGF0aCBmaWxsPSIjNjAwMEE0IiBkPSJNMzAgMjJjLTMgMC02LjY4OCA3LjA5NC03IDEwYy0uNDIxIDMuOTE1IDIgNCAyIDRoMTFWMjZzLTMuNDM4LTQtNi00Ii8+PGVsbGlwc2UgY3g9IjI3LjU3NCIgY3k9IjI4LjQ4OSIgZmlsbD0iI0ZGNkJFMSIgcng9IjUuODQ4IiByeT0iMS42MzgiIHRyYW5zZm9ybT0icm90YXRlKC02MCAyNy41NzQgMjguNDkpIi8+PHBhdGggZmlsbD0iI0ZGRTBDNCIgZD0iTTIwLjA4NiAwYzEuMTgxIDAgMi4xMzguOTU3IDIuMTM4IDIuMTM4YzAgLjc4OS42NjggMTAuODI0LjY2OCAxMC44MjRMMTcuOTQ4IDE4VjIuMTM4QzE3Ljk0OC45NTcgMTguOTA1IDAgMjAuMDg2IDAiLz48cGF0aCBmaWxsPSIjRkZFMEM0IiBkPSJNMTguODc1IDQuMzIzYzAtMS4wOTkuODUyLTEuOTg5IDEuOTAzLTEuOTg5czEuOTAzLjg5MSAxLjkwMyAxLjk4OWMwIDAgLjUzNSA1Ljk0MiAxLjE5MiA5LjM3Yy44NzggMS44NjYgMS4zNjkgNC42ODIgMS4yNjEgNi4yNDhjLjA1NC4zOTggNS42MjUgNS4wMDYgNS42MjUgNS4wMDZjLS4yODEgMS44MTMtMi4yNTkgNi4xNTUtNC43NTkgOC4xNTlsLTMuNTIxLTIuOTI0Yy0yLjg4NS0uNDA0LTQuNDU4LTMuMzMxLTQuNDU4LTQuMjY0YzAtMi45ODQuODU0LTIxLjU5NS44NTQtMjEuNTk1Ii8+PHBhdGggZmlsbD0iIzYwMDBBNCIgZD0iTTYgMjJjMyAwIDYuNjg4IDcuMDk0IDcgMTBjLjQyMSAzLjkxNS0yIDQtMiA0SDBWMjZzMy40MzgtNCA2LTQiLz48ZWxsaXBzZSBjeD0iOC40MjYiIGN5PSIyOC40ODkiIGZpbGw9IiNGRjZCRTEiIHJ4PSIxLjYzOCIgcnk9IjUuODQ4IiB0cmFuc2Zvcm09InJvdGF0ZSgtMzAgOC40MjQgMjguNDg5KSIvPjxwYXRoIGZpbGw9IiNGRkUwQzQiIGQ9Ik0xNi4wNjEuMDExYTIuMTE1IDIuMTE1IDAgMCAwLTIuMzMzIDIuMTAzYzAgLjc4LS4xODQgMTAuMzE5LS4xODQgMTAuMzE5TDE3Ljg5NSAxOGwuMDYyLTE1Ljc2NWMwLTEuMTA2LS43OTUtMi4xMTQtMS44OTYtMi4yMjQiLz48cGF0aCBmaWxsPSIjRkZFMEM0IiBkPSJNMTcuMTI1IDQuMzIzYzAtMS4wOTktLjg1Mi0xLjk4OS0xLjkwMy0xLjk4OXMtMS45MDMuODkxLTEuOTAzIDEuOTg5YzAgMC0uNTM1IDUuOTQyLTEuMTkyIDkuMzdjLS44NzggMS44NjYtMS4zNjkgNC42ODItMS4yNjEgNi4yNDhjLS4wNTQuMzk4LTUuNjI1IDUuMDA2LTUuNjI1IDUuMDA2QzUuNTIyIDI2Ljc2IDcuNSAzMS4xMDIgMTAgMzMuMTA2bDMuNTIxLTIuOTI0YzIuODg1LS40MDQgNC40NTgtMy4zMzEgNC40NTgtNC4yNjRjMC0yLjk4NC0uODU0LTIxLjU5NS0uODU0LTIxLjU5NSIvPjxwYXRoIGZpbGw9IiNGRkUwQzQiIGQ9Ik0xNy45NTggMjUuODIzYS43NS43NSAwIDAgMS0uNzUtLjc1VjIuNzkyYS43NS43NSAwIDAgMSAxLjUgMHYyMi4yODJhLjc1Ljc1IDAgMCAxLS43NS43NDkiLz48L3N2Zz4="
+            alt="thank you"
+          />
+          <div id="thank">
+            <p>
+              <strong>Thank You</strong><br />
+              <span>48 Products</span>
+            </p>
+          </div>
+        </div>
+        <div class="occasion-card">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCI+PHBhdGggZmlsbD0iIzk3NUVFQSIgZD0iTTk5LjA2IDkxLjQyUzgzLjk1IDEwNS42IDYzLjk3IDEwNS42UzI4Ljg5IDkxLjQyIDI4Ljg5IDkxLjQycy0yLjgxLTEzLjQ5IDQuNDUtMzYuNzhjMy44My0xMi4yOCA1OC4zMy0xMy41MyA2Mi42LTIuNzljNy4yNiAxOC4yMyAzLjEyIDM5LjU3IDMuMTIgMzkuNTciLz48cGF0aCBmaWxsPSIjOTc1RUVBIiBkPSJtMjguODkgOTEuNDJsNC43OSAzLjg0cy0uMDQtNy42IDIuMzEtMTQuNjljLjg4LTIuNjUgNC4wMi0zLjc2IDYuMzgtMi4yN2wxOC4yOSAxMS40N2E2LjM5IDYuMzkgMCAwIDAgNi43LjA1YzguNzQtNS4zIDMxLjU0LTE5LjE3IDMyLjU4LTIwLjAyYzAgMCAwLTEuNzEtLjQzLTMuODlMMjguNjMgNjZ6Ii8+PHBhdGggZmlsbD0iIzk3NUVFQSIgZD0ibTEyMi44MSA1Mi4wM2wtNTYuOCAzMy44M2MtMS4yNC43NC0yLjc5Ljc0LTQuMDQgMEw1LjE5IDUyLjAzYy0xLjU4LS45NC0xLjU4LTMuMjMgMC00LjE3bDU2LjgtMzMuODNjMS4yNC0uNzQgMi43OS0uNzQgNC4wNCAwbDU2LjggMzMuODNjMS41Ny45NCAxLjU3IDMuMjMtLjAyIDQuMTciLz48cGF0aCBmaWxsPSIjOWU5ZTllIiBkPSJNNjQuMDQgODMuMzhjLS4wMSAwLS4wMy4wMS0uMDQuMDFjLS4xNiAwLS4zMi0uMDQtLjQ2LS4xM0w0LjE4IDQ5LjA0cy0uMjkuNTUgMCAxLjU0Yy4zLjk5Ljc2IDEuMzEgMS4wMSAxLjQ2bDU2LjggMzMuODNjLjYyLjM3IDEuMzIuNTYgMi4wMi41NmguMDR2LTMuMDV6Ii8+PHBhdGggZmlsbD0iIzYxNjE2MSIgZD0iTTY0IDgzLjM4Yy4wMSAwIC4wMy4wMS4wNC4wMWMuMTYgMCAuMzItLjA0LjQ2LS4xM2w1OS4zNi0zNC4yMnMuMjkuNTUgMCAxLjU0Yy0uMy45OS0uNzYgMS4zMS0xLjAxIDEuNDZsLTU2LjggMzMuODNjLS42Mi4zNy0xLjMyLjU2LTIuMDIuNTZoLS4wNHYtMy4wNXoiLz48cGF0aCBmaWxsPSIjOTc1RUVBIiBkPSJtMzUuNDUgNzAuMDZsLjMyLTIuODFTNjAuMjggNTMuOTIgNjIuNyA1Mi41MnM0Ljk2LTIuOTYgNi4wOS00LjIxYzItMi4yLjU2LTMuNTguNTYtMy41OHMtMS41OCAyLjU2LTUuMzUgMi4xMWMtMi4xNi0uMjYtNC45Ny0yLjAxLTUuNDQtMi44M3MtMjcuNjcgMTkuOS0yNy42NyAxOS45bC0uMTkgMy4zM3oiLz48cGF0aCBmaWxsPSIjZTJhNjEwIiBkPSJNNjkuMzUgNDQuNzRjLTIuNjIgMy42Ni03LjA2IDIuMDYtNy4wNiAyLjA2cy0xMy45MSA2LjY3LTE0LjQzIDUuNjZzMTEuNDktNy4xOSAxMS40OS03LjE5cy0uNjctMi40Ni0uNi0zLjUxYzAgMC0yMS43MiAxMy44Mi0yOS44NyAxOC40N2MtNC4yNyAyLjQ0LTUuMTggNC43NC01LjE3IDcuOThjMCAxLjQyLjAyIDYuMDMuMDQgOC43OGMwIC41MS0uMjIuOTktLjYxIDEuMzFhNS4xNiA1LjE2IDAgMCAwLTEuODkgMy45OWMwIDEuNTMuNjcgMi45IDEuNzMgMy44NWMuNTcuNTEuNDUgMS42MS41IDIuMzJjLjEgMS4zNiAwIDEuOTgtLjU2IDMuMjRjLS41NSAxLjIzLTEuMDYgMi40OS0xLjQxIDMuNzljLS4yNyAxLS40NSAyLjAzLS42MyAzLjA1Yy0xLjE5IDYuODMtMS43MyAxNC4xMy00Ljg4IDIwLjQxYS45OTMuOTkzIDAgMCAwIC40NSAxLjM0YTEuMDA3IDEuMDA3IDAgMCAwIDEuMzUtLjQ0YzEuNjQtMy4yNyAyLjQ5LTYuODUgMy4xOS0xMC40Yy0uMDQgMy4yMS0uMDYgNi40NS0uMTcgOS45NWMtLjAyLjY4LS4wNyAyLjA1LjU1IDIuMzVjMi4zMyAxLjEzIDIuMzMtMi4zNSAyLjMzLTIuMzVzLjAzIDMuMTMgMy4yIDMuMTNzMy40LTMuMTMgMy40LTMuMTNzLjIzIDIuODcgMS44NiAyLjczYy42Ni0uMDYgMS41My0uNDYgMS4yMi0zLjg5Yy0uMzEtMy40Mi0xLjA4LTE1LjY4LTEuNDEtMTkuNTZjLS40Ni01LjM3LTIuMjItOC41Ni0yLjU4LTEwLjQ2Yy0uMTMtLjcyLS4xNC0xLjQ3LjQzLTEuOTRhNS4xNjUgNS4xNjUgMCAwIDAgLjEzLTcuODhhMS43MSAxLjcxIDAgMCAxLS41OC0xLjQyYy4xOS0yLjU5LjQtNi4zNS41Ny03LjIyYy43NC0zLjkxIDIuNjctNC42MSA0LjY1LTUuNzdjMS45OC0xLjE3IDMwLjY2LTE0LjE5IDMyLjMzLTE1LjNjMy4wOS0yLjA3IDIuNDMtMy45NSAyLjQzLTMuOTUiLz48cGF0aCBmaWxsPSIjZmZjYTI4IiBkPSJNNjkuMzUgNDQuNzRjLTIuNDcgMy40OS03LjYgMS45My03LjYgMS45M3MtMTMuMTEgNS44MS0xMi4yNCA0Ljc2Yy44Ni0xLjA1IDkuODQtNi4xNiA5Ljg0LTYuMTZzLS42Ny0yLjQ2LS42LTMuNTFjMCAwLTIyLjEgMTIuNzctMzAuNjcgMTguOTFjLTIuMjEgMS41OS00Ljk1IDQuMTktMi43MiA2Ljc4YzEuMDMgMS4xOSAzLjAyIDEuNDQgNC4yOS41Yy43Ny0uNTYgMS4zNy0xLjM4IDIuMDUtMi4wM2MuODQtLjgyIDEuODYtMS4zNCAyLjg2LTEuOTNjMS45OC0xLjE3IDMwLjY2LTE0LjE5IDMyLjMzLTE1LjNjMy4xMi0yLjA3IDIuNDYtMy45NSAyLjQ2LTMuOTUiLz48cGF0aCBmaWxsPSIjOWU3NDBiIiBkPSJNMjYuMTEgOTEuODZjLTEuMzIgMC0yLjIxLS4xMS0zLjAyLS4zYS42Mi42MiAwIDAgMS0uNDgtLjY1bC4yNi0zLjgyYy4wMy0uMzkuNC0uNjYuNzgtLjU1Yy45LjI2IDIuNy41MiA1LjY0LS4xYy4zNi0uMDguNzIuMTcuNzYuNTRsLjQgMy44Yy4wMy4zMS0uMTcuNi0uNDcuNjdjLTEuNTMuMzUtMi42NC40MS0zLjg3LjQxIi8+PHBhdGggZmlsbD0iIzYxNjE2MSIgZD0iTTk5LjA2IDkxLjQyczEuNzctOS4yNCAxLjA2LTE5LjA3Yy0uMTItMS42Ni0xLjE0LTMuMDktMS45MyAyLjcyYy0uNDUgMy4zMy0xLjQzIDEzLjMtMy4xIDE5LjUzYzIuNTUtMS44NCAzLjk3LTMuMTggMy45Ny0zLjE4TTY1LjczIDM2Ljc5Yy43My4yMyAxLjQuNzkgMS41OSAxLjU0Yy4yNSAxLS4zOCAyLTEuMDYgMi43OGMtMS4zMyAxLjUzLTMuMTYgMi44Ny01LjE5IDIuOGMtLjY3LS4wMi0xLjM5LS4yNC0xLjgtLjc3Yy0uMjktLjM3LS4zOS0uODUtLjQyLTEuMzJjLS4xOC0zLjQzIDMuNy02LjAzIDYuODgtNS4wMyIvPjwvc3ZnPg=="
+            alt="graduation"
+          />
+          <div id="graduation">
+            <p>
+              <strong>Graduation</strong><br />
+              <span>13 Products</span>
+            </p>
+          </div>
+        </div>
+        <div class="occasion-card">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCI+PGVsbGlwc2UgY3g9IjY0IiBjeT0iNTcuMDkiIGZpbGw9IiM0NzM1MmQiIHJ4PSI1NC41IiByeT0iNTEuMzEiLz48cGF0aCBmaWxsPSIjRjJDNkExIiBkPSJNMTA4LjYzIDY5Ljc4czguMyAxLjQ0IDguMyAxMC4zOGMwIDcuODktNi4wNiAxMS0xMi4xMSAxMVY2OS43OHptLTg5LjI2IDBzLTguMyAxLjQ0LTguMyAxMC4zOGMwIDcuODkgNi4wNiAxMSAxMi4xMSAxMVY2OS43OHoiLz48cGF0aCBmaWxsPSIjRjJDNkExIiBkPSJNOTUuNTkgNDIuOTVDODguMDMgMzMuNTMgNzUuMDIgMjkuNSA2NCAyOS41Yy0xMS4wMSAwLTI0LjAzIDQuMDQtMzEuNTggMTMuNDVjLTcuMzkgOS4yLTExLjI2IDIxLjA5LTExLjIgMzcuMDRjLjA2IDEyLjg2IDMuMzYgMjIuNzUgMTIuNjkgMzAuNTNjOC42NCA3LjIxIDE4LjYzIDExLjEgMjkuNDUgMTEuMWMxMC42NCAwIDIyLjM4LTMuNzIgMzAuNy0xMS4wNGM5LjEzLTguMDMgMTIuNjctMTcuNzMgMTIuNzMtMzAuNTljLjA2LTE1Ljk2LTMuODMtMjcuODQtMTEuMi0zNy4wNCIvPjxwYXRoIGZpbGw9IiNGMkM2QTEiIGQ9Ik03MC4yNSA4OS42NGMtMi4yLjYyLTQuNDguOTMtNi4yNS45M3MtNC4wNS0uMy02LjI1LS45M2MtLjk0LS4yNy0xLjMxLjYzLS45NyAxLjIyYy43IDEuMjMgMy41MSAzLjcxIDcuMjIgMy43MXM2LjUyLTIuNDggNy4yMi0zLjcxYy4zNC0uNTktLjAzLTEuNDgtLjk3LTEuMjIiLz48cGF0aCBmaWxsPSIjMzUyNjIwIiBkPSJNNzYuOTMgOTkuOEg1MS4wN2MtMS40OCAwLTIuMTIgMS0xLjE0IDIuNDljMS4zNyAyLjA5IDYuNDcgNi4xMSAxNC4wNyA2LjExczEyLjctNC4wMiAxNC4wNy02LjExYy45OC0xLjQ5LjM1LTIuNDktMS4xNC0yLjQ5Ii8+PHBhdGggZmlsbD0iIzQyMzEyYyIgZD0iTTQ2Ljg4IDgwLjM2YzAgMy44MS0yLjU1IDYuOS01LjcxIDYuOXMtNS43My0zLjA5LTUuNzMtNi45YzAtMy44MiAyLjU3LTYuOTEgNS43My02LjkxczUuNzEgMy4wOSA1LjcxIDYuOTFtNDUuNjggMGMwIDMuODEtMi41NSA2LjktNS43MSA2LjlzLTUuNzMtMy4wOS01LjczLTYuOWMwLTMuODIgMi41Ny02LjkxIDUuNzMtNi45MWMzLjE1IDAgNS43MSAzLjA5IDUuNzEgNi45MSIvPjxwYXRoIGZpbGw9IiM0NzM1MmQiIGQ9Ik0xOC44NSA3Ny40czEyLjQyLTEzLjAxIDE2Ljk4LTE3LjM5Yy4yOS0uMjguNzYtLjA0LjcyLjM2Yy0uMTggMS44MS0uMzIgMy43OS0uMzkgNC45OWMtLjAzLjU2LjQ3IDEgMS4wMi45YzguOTItMS42OSAxNy41LTUuNCAxOS44MS02LjQ0Yy4yOC0uMTMuNTkuMDkuNTguNDFjLS4wNSAxLjY1LS4wMyAzLjIzLS4wMSA0LjJjLjAxLjUyLjQ4LjkxIDEgLjgzYzguMTgtMS4yNiAxNS00LjYxIDE3LjI2LTUuODJjLjUyLS4yOCAxLjEyLS4zNCAxLjY4LS4xNGM0LjI0IDEuNTIgOS4zOSA0LjUyIDExLjI2IDUuNjVjLjQxLjI1Ljk0LjExIDEuMTgtLjMxYy43Mi0xLjI4IDEuNy0zLjI3IDIuMTYtNC4yMWMuMTMtLjI2LjQ2LS4zMy42Ny0uMTJjNi42NyA2LjU5IDE2LjM5IDE3LjEgMTYuMzkgMTcuMWw2Ljg3LTIyLjA2UzEwNC45IDE2LjEgNjYuMjMgMTYuMVMxMi45MSA1Ny45NyAxMi45MSA1Ny45N3oiLz48L3N2Zz4="
+            alt="get"
+          />
+          <div id="get">
+            <p>
+              <strong>Get Well Soon</strong><br />
+              <span>16 Products</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main">
+      <section class="sect-4">
+        <section class="sect-4-info">
+          <div class="sect-4-discount-badge"><b>Flat 20% Discount</b></div>
+          <p class="p">
+            Lovely Fresh<br />
+            Bouquets
+          </p>
+          <p class="lorem">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <button class="button">Shop Now &#8594;</button>
+        </section>
+        <section class="sect-4-media">
+          <img src="whitebox image.png" />
+        </section>
       </section>
-      <section class="occasions" id="occasions">
-         <h4 >occasions</h4>
-         <h2>Shop by Occasions</h2>
-         <div class="occasion-grid">
-            <div class="occasion-card">
-               <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0NTQiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNDU0IDUxMiI+PHBhdGggZmlsbD0iI0ZGOTZEMyIgZD0ibTI0Ny42NTYgOTguMjg0bDcxLjQzMS01NS4yNjhsMzEuNjkzIDE2LjIyN2wtNC4yMjMgOTIuOTR6TTE4Ni44MiAzMTcuODQ4bDE0MC44ODYtMTQ3LjM4NmwtOTkuMjYtNTQuMjQ3ek00MjQuMDY4IDk2Ljc2N2wtNTEuMTAyLTI2LjE2NGwtNC4yNTQgOTMuNjU0bDg0LjMxNCA0NS45NXptLTY1LjA0IDg4LjA0MUwyMTkuMjEzIDMxOS4zNTFsMTI2LjQwMy02MC43ODVjMjMuMDczIDYwLjQ3NSAxMC4wMDkgMTMzLjczLTQ2LjE5MyAxODFjLTk0LjQzNSA3OS40MjYtMjQwLjM1MiAyNi40MDMtMjYyLjAyLTk1LjIxM0MyMi4wNTggMjU4LjIyIDc3LjEyIDE4My4wNDUgMTUxLjc5OSAxNjEuNDg3bDIxLjQ0OSAxMzAuNDY0bDI5LjgwNy0xOTAuMzAybC03My4yMjgtNDEuNzUxbDE0LjU5MyA2Ny40NjlDNTIuNDk5IDE1Mi43NTQtMTUuNjc1IDI0NC44MDcgMy4xMzYgMzUwLjM5QzI5LjQ5IDQ5OC4zMDYgMjA2Ljk2MSA1NjIuNzk1IDMyMS44MTggNDY2LjE5MmM2OC4zMzgtNTcuNDc3IDg0LjI3NC0xNDYuNTYgNTYuMjQxLTIyMC4xMDNsNTQuNzY5LTIxLjA2MnpNMjk2Ljc4NCAzMS41OTdMMjM1LjA3MSAwbC05Mi40MDcgNDEuMDY1bDgzLjI0NiA0NS4zNjh6Ii8+PC9zdmc+" alt="weddings">
-               <div id="weddings">
-                  <p> <strong>weddings</strong> <br> <span>42 Products</span></p>
-               </div>
-            </div>
-            <div class="occasion-card">
-               <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCI+PHBhdGggZmlsbD0iIzZDM0FCOCIgZD0iTTE2LjQgMzEuNzNzLTYuNDUuNTEtNy4zMSAxLjk2Yy0uODcgMS40NS0uOTIgMy42OC0uOTIgNi4xM2MwIDIuNDYtLjEgOC4xLS4xIDguMWwxLjU0IDMuMzFzLjI5IDQyLjE5LjI5IDQzLjVjMCAxLjMgMCAyLjg5IDEuODggMy45czQ5LjY2IDI0LjA5IDUxLjE1IDI0LjcxYzIuMjUuOTMgMy4zMi41OCAzLjMyLjU4bDUzLjA5LTg4Ljc5cy0uMTctMi40My0yLjM4LTMuMDFjLTEuMjctLjMyLTEwMC41Ni0uMzktMTAwLjU2LS4zOSIvPjxwYXRoIGZpbGw9IiM2QzNBQjgiIGQ9Ik02NS42OCA2MC45MmMtLjgxIDIuMjMtLjQ0IDI1LjI5LS4zIDQyLjA2Yy4xNCAxNi43Ni0uNDMgMjAuMjMgMCAyMC44MXMxLjYuMDIgNC45MS0xLjQ1YzYuMTUtMi43MiAzNS42OS0xNy4zNCAzNy44Ni0xOC42NHM3LjQ3LTMuOTkgOC4zNC01LjQ0czEuMzQtMTQuOTQgMS42My0yNS43N2MuMjktMTAuODQuNTgtMTkuNTEuNTgtMTkuNTFsMS4zLTMuOXMtLjI4LTEwLjU0LS4zMy0xMS43Yy0uMDktMS45Mi0uMy0yLjkxLS43OS0yLjY3Yy0uNy4zMy02LjU0IDUuMTItMjIgMTIuNjRjLTkuNzEgNC43MS0zMC42NCAxMi4wMy0zMS4yIDEzLjU3Ii8+PHBhdGggZmlsbD0iIzZDM0FCOCIgZD0iTTY1LjgyIDExLjIxYy00LjMzLS4yLTE2LjE4IDYuNjUtMjcuNiAxMC40UzkuNTYgMzIuOSA5LjQxIDMzLjM0Yy0uMTQuNDMgNi45NCAzLjYgMTEuNDYgNS43N2M1LjM3IDIuNTcgMjUuODcgMTIuMjggMjkuNjIgMTMuODdjMy43NiAxLjU5IDEyLjcyIDUuMzEgMTQuMTYgNS4yYzIuMDItLjE0IDIxLjEtNy42NiAzMC43OC0xMi4yOHMyMS43OC0xMS43OCAyMS45NC0xMy41MmMuMDctLjc4LTE3LjgtNy40NS0yNi43MS0xMS40OGMtMTcuMi03Ljc5LTIxLjY3LTkuNTQtMjQuODQtOS42OSIvPjxwYXRoIGZpbGw9IiM2QzNBQjgiIGQ9Ik04LjEyIDQ5Ljc3Yy4xNSAxLjg4IDEuMTggMi41NSAzLjggMy42OXM1Mi4xNSAyNi44NyA1My4yOSAyNi44N3MxLjQ4LTQuMDguMjMtMy45N2MtLjY4LjA2LTE2Ljk1LTcuNjctMzIuMTUtMTUuMzlDMjAuMzkgNTQuNDMgOC4wNCA0Ny45IDguMDQgNDcuOXoiLz48cGF0aCBmaWxsPSIjNkMzQUI4IiBkPSJNMTIwLjAxIDQ4Ljk5UzY3LjEyIDc1Ljg5IDY2LjYgNzYuMTVzLTEuMzUuMTctMS4zNS4xN2wtLjA0IDQuMDFzLjQ5LjExIDEuMDQtLjA2Yy4zMi0uMSA1Mi4yMy0yNi45NyA1Mi40Ni0yNy4wNXMxLjIzLS42OCAxLjQ0LTEuOTVjLjE4LTEuMDItLjE0LTIuMjgtLjE0LTIuMjgiLz48cGF0aCBmaWxsPSIjRjA2REJCIiBkPSJtMjguODYgOTcuNDJsMTAuMzUgMTUuNGw0LjUzIDEuNTVzLjM3LTE2LjguNTItMjkuMjVjLjIxLTE4LjE5LjEzLTM0Ljc4LjM5LTM1LjcyYy40My0xLjU5IDIwLjU2LTguMTIgMjAuNTYtOC4xMlM4Ny45NSA0OC40MSA4OC42NyA1MGMuMzIuNy4wNyAxMi40OCAwIDI2LjIxYy0uMDkgMTcuMzQtLjA2IDM3LjM2LS4wNiAzNy4zNnMyLjM1LS4wMSAyLjYzLS44OGMuMjktLjg3IDEuNDUtNy41OCAxLjQ1LTcuNThsOC44Mi01OC43OWw0LjQ4LTUuNzhsLTYuMjItMTEuODRsLTI1LjUyLTEyLjU2bC04Ljc3IDEuOTdsLTkuNDktMS40NWwtMzAuMSAyMS42M2wzLjUxIDcuMTJsOC42MSA0LjM5eiIvPjxwYXRoIGZpbGw9IiNGMDZEQkIiIGQ9Ik05MS4yOCA0OS4zOWMtLjU1IDEuMjEtLjIzIDYzLjU2LS4yMyA2My41NnMyLjc1LTEuNTIgNi4yOS0zLjIyYzMuNTItMS42OSA2LjA1LTIuNzQgNi4yNy0zLjYycy42MS02Mi41NC42MS02Mi41NHoiLz48cGF0aCBmaWxsPSIjRjA2REJCIiBkPSJNNDEuMzUgNDguMWMuMzMuMzYtLjIxIDY1LjA2LS44OCA2NS4yMWMtLjUzLjEzLTEyLjU4LTUuMjUtMTIuNTgtNS44cy45Ny02Mi4zOC45Ny02Mi4zOFM0MC4zNyA0NyA0MS4zNSA0OC4xbTIzLjg4LTMzLjg1Yy0zLjMzIDAtNy4wMS45NS04LjA4IDMuNzRzLTEuMzEgNi45NC0xLjMxIDEwLjA0YzAgMi45Ny0uNDggMTAuNTcgOC42NyAxMC40NXM5LjQyLTMuNTEgOS41Ni0xMC45OWMuMTItNi4yNC0uNzEtOS4yNy0xLjU0LTEwLjU3Yy0uNzQtMS4xNy0zLjItMi42Ny03LjMtMi42NyIvPjxwYXRoIGZpbGw9IiNGMDZEQkIiIGQ9Ik01OS45NCAyOS42OWMyLjA4LjEyIDIuOTctNC40NSA0LjU3LTYuOTVjMS42LTIuNDkgMy4yNy00LjE2IDIuNjctNS40NmMtLjQ5LTEuMDgtNC44NC0xLjQzLTcuMTkgMS44NGMtMS42NSAyLjMxLTEuOTQgMTAuNDYtLjA1IDEwLjU3Ii8+PHBhdGggZmlsbD0iI0YwNkRCQiIgZD0iTTczLjMzIDE2LjQyczIuOTUgMyAzLjcyIDguODhzLS4xMiAxMC40NS0uMTIgMTAuNDVzMTQuNjYtLjQ0IDE5LjcyLjUzYzQuOTkuOTcgNi43MyAzLjE3IDYuNzMgNC43N3MtMy4yOCAyLjg5LTYuNjEgMi42NXMtNS41OC0uNDItNiAuNDJzLjE4IDIuMTQgNC44MSAyLjQ5YzQuNjMuMzYgOS45OC0uMyAxMS42NC02LjA2czEuNzItMTUuNzQgMS4xMy0yMi45M3MtMS44OS0xMS4zLTUuMTEtMTIuODZjLTMuMzktMS42My0xMS44OC0xLjktMTkuOSAyLjYxcy0xMC4wMSA5LjA1LTEwLjAxIDkuMDUiLz48cGF0aCBmaWxsPSIjRjA2REJCIiBkPSJNODkuOTQgOS41OGMtMS4wNC0xLjM0LTQuMzktMS4zLTYuMTguNzdjLTEuOSAyLjItMi4zMiAxMC41Ny4xMiAxMS4wNWMyLjc2LjU0IDIuMjYtMy45OCA0LjI4LTYuNzdjMS45OC0yLjczIDIuNzktMy43NCAxLjc4LTUuMDUiLz48cGF0aCBmaWxsPSIjRjA2REJCIiBkPSJNNTYuMzggMTYuNzFTNDUuMTUgMy42MiAzMi4zMiAzLjgyYy03LjcyLjEyLTkuNjggNC41Ny0xMC4xIDYuNDFzLTMuNjIgMjAuMTQuNjUgMzAuMDVTMzYgNDcuNjIgMzcuMzkgNDcuM2MxLjc4LS40MiA1LjU3LTEuNzIgNS4yMS0zLjA5cy0xMi45NSAzLjU2LTEzLjA3LTIuMDhzOC45MS02LjI0IDEzLjA3LTYuMzZzMTEuMjkuODMgMTEuMjkuODNzLTEuMjUtNi44My0uNDItMTEuN3MyLjkxLTguMTkgMi45MS04LjE5Ii8+PHBhdGggZmlsbD0iI0YwNkRCQiIgZD0iTTI4Ljg4IDguNTdjLTEuNiAxLjY2LTIuMjYgMTEuMjMtMS4yNSAxNS45OHMxLjkgNi43NyAzLjk4IDYuMzZjMS43NC0uMzUgMi43OS05LjY3IDMuNjItMTIuOTVjLjg5LTMuNSAzLjA5LTcuMjIgMi4yLTguODVjLTEuMzYtMi41LTYuODgtMi4yNy04LjU1LS41NCIvPjwvc3ZnPg==" alt="Birthday">
-               <div id="birthday">
-                  <p><strong>Birthday</strong><br> <span>56 Products</span></p>
-               </div>
-            </div>
-            <div class="occasion-card">
-               <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48ZyBmaWxsPSJub25lIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiPjxwYXRoIGZpbGw9IiM4MjRBQ0YiIHN0cm9rZT0iIzIzMWYyMCIgZD0iTTI3LjggMi43QTEyLjE2IDEyLjE2IDAgMCAwIDIwIDUuMTFhMTIuMTYgMTIuMTYgMCAwIDAtNy44LTIuNDFDNC40IDIuNy41IDcuMzguNSAxNC40YzAgMTAuNzkgMTAgMTguMjcgMTcuNjIgMjIuNDJhMy45MiAzLjkyIDAgMCAwIDMuNzYgMEMyOS41NSAzMi42NyAzOS41IDI1LjE5IDM5LjUgMTQuNGMwLTcuMDItMy45LTExLjctMTEuNy0xMS43WiIgc3Ryb2tlLXdpZHRoPSIxIi8+PHBhdGggc3Ryb2tlPSIjMDAwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIGQ9Ik0yOC4zNiA2LjcxYzQuMzgtLjQ2IDUuOTEgMiA2LjU0IDMuNzYiIHN0cm9rZS13aWR0aD0iMSIvPjwvZz48L3N2Zz4=" alt="Anniversary">
-               <div id="anniversary">
-                  <p><strong>Anniversary</strong><br> <span>11 Products</span></p>
-               </div>
-            </div>
-            <div class="occasion-card">
-               <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiIgdmlld0JveD0iMCAwIDM2IDM2Ij48cGF0aCBmaWxsPSIjNjAwMEE0IiBkPSJNMzAgMjJjLTMgMC02LjY4OCA3LjA5NC03IDEwYy0uNDIxIDMuOTE1IDIgNCAyIDRoMTFWMjZzLTMuNDM4LTQtNi00Ii8+PGVsbGlwc2UgY3g9IjI3LjU3NCIgY3k9IjI4LjQ4OSIgZmlsbD0iI0ZGNkJFMSIgcng9IjUuODQ4IiByeT0iMS42MzgiIHRyYW5zZm9ybT0icm90YXRlKC02MCAyNy41NzQgMjguNDkpIi8+PHBhdGggZmlsbD0iI0ZGRTBDNCIgZD0iTTIwLjA4NiAwYzEuMTgxIDAgMi4xMzguOTU3IDIuMTM4IDIuMTM4YzAgLjc4OS42NjggMTAuODI0LjY2OCAxMC44MjRMMTcuOTQ4IDE4VjIuMTM4QzE3Ljk0OC45NTcgMTguOTA1IDAgMjAuMDg2IDAiLz48cGF0aCBmaWxsPSIjRkZFMEM0IiBkPSJNMTguODc1IDQuMzIzYzAtMS4wOTkuODUyLTEuOTg5IDEuOTAzLTEuOTg5czEuOTAzLjg5MSAxLjkwMyAxLjk4OWMwIDAgLjUzNSA1Ljk0MiAxLjE5MiA5LjM3Yy44NzggMS44NjYgMS4zNjkgNC42ODIgMS4yNjEgNi4yNDhjLjA1NC4zOTggNS42MjUgNS4wMDYgNS42MjUgNS4wMDZjLS4yODEgMS44MTMtMi4yNTkgNi4xNTUtNC43NTkgOC4xNTlsLTMuNTIxLTIuOTI0Yy0yLjg4NS0uNDA0LTQuNDU4LTMuMzMxLTQuNDU4LTQuMjY0YzAtMi45ODQuODU0LTIxLjU5NS44NTQtMjEuNTk1Ii8+PHBhdGggZmlsbD0iIzYwMDBBNCIgZD0iTTYgMjJjMyAwIDYuNjg4IDcuMDk0IDcgMTBjLjQyMSAzLjkxNS0yIDQtMiA0SDBWMjZzMy40MzgtNCA2LTQiLz48ZWxsaXBzZSBjeD0iOC40MjYiIGN5PSIyOC40ODkiIGZpbGw9IiNGRjZCRTEiIHJ4PSIxLjYzOCIgcnk9IjUuODQ4IiB0cmFuc2Zvcm09InJvdGF0ZSgtMzAgOC40MjQgMjguNDg5KSIvPjxwYXRoIGZpbGw9IiNGRkUwQzQiIGQ9Ik0xNi4wNjEuMDExYTIuMTE1IDIuMTE1IDAgMCAwLTIuMzMzIDIuMTAzYzAgLjc4LS4xODQgMTAuMzE5LS4xODQgMTAuMzE5TDE3Ljg5NSAxOGwuMDYyLTE1Ljc2NWMwLTEuMTA2LS43OTUtMi4xMTQtMS44OTYtMi4yMjQiLz48cGF0aCBmaWxsPSIjRkZFMEM0IiBkPSJNMTcuMTI1IDQuMzIzYzAtMS4wOTktLjg1Mi0xLjk4OS0xLjkwMy0xLjk4OXMtMS45MDMuODkxLTEuOTAzIDEuOTg5YzAgMC0uNTM1IDUuOTQyLTEuMTkyIDkuMzdjLS44NzggMS44NjYtMS4zNjkgNC42ODItMS4yNjEgNi4yNDhjLS4wNTQuMzk4LTUuNjI1IDUuMDA2LTUuNjI1IDUuMDA2QzUuNTIyIDI2Ljc2IDcuNSAzMS4xMDIgMTAgMzMuMTA2bDMuNTIxLTIuOTI0YzIuODg1LS40MDQgNC40NTgtMy4zMzEgNC40NTgtNC4yNjRjMC0yLjk4NC0uODU0LTIxLjU5NS0uODU0LTIxLjU5NSIvPjxwYXRoIGZpbGw9IiNGRkUwQzQiIGQ9Ik0xNy45NTggMjUuODIzYS43NS43NSAwIDAgMS0uNzUtLjc1VjIuNzkyYS43NS43NSAwIDAgMSAxLjUgMHYyMi4yODJhLjc1Ljc1IDAgMCAxLS43NS43NDkiLz48L3N2Zz4=" alt="thank you">
-               <div id="thank">
-                  <p><strong>Thank You</strong><br> <span>48 Products</span></p>
-               </div>
-            </div>
-            <div class="occasion-card">
-               <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCI+PHBhdGggZmlsbD0iIzk3NUVFQSIgZD0iTTk5LjA2IDkxLjQyUzgzLjk1IDEwNS42IDYzLjk3IDEwNS42UzI4Ljg5IDkxLjQyIDI4Ljg5IDkxLjQycy0yLjgxLTEzLjQ5IDQuNDUtMzYuNzhjMy44My0xMi4yOCA1OC4zMy0xMy41MyA2Mi42LTIuNzljNy4yNiAxOC4yMyAzLjEyIDM5LjU3IDMuMTIgMzkuNTciLz48cGF0aCBmaWxsPSIjOTc1RUVBIiBkPSJtMjguODkgOTEuNDJsNC43OSAzLjg0cy0uMDQtNy42IDIuMzEtMTQuNjljLjg4LTIuNjUgNC4wMi0zLjc2IDYuMzgtMi4yN2wxOC4yOSAxMS40N2E2LjM5IDYuMzkgMCAwIDAgNi43LjA1YzguNzQtNS4zIDMxLjU0LTE5LjE3IDMyLjU4LTIwLjAyYzAgMCAwLTEuNzEtLjQzLTMuODlMMjguNjMgNjZ6Ii8+PHBhdGggZmlsbD0iIzk3NUVFQSIgZD0ibTEyMi44MSA1Mi4wM2wtNTYuOCAzMy44M2MtMS4yNC43NC0yLjc5Ljc0LTQuMDQgMEw1LjE5IDUyLjAzYy0xLjU4LS45NC0xLjU4LTMuMjMgMC00LjE3bDU2LjgtMzMuODNjMS4yNC0uNzQgMi43OS0uNzQgNC4wNCAwbDU2LjggMzMuODNjMS41Ny45NCAxLjU3IDMuMjMtLjAyIDQuMTciLz48cGF0aCBmaWxsPSIjOWU5ZTllIiBkPSJNNjQuMDQgODMuMzhjLS4wMSAwLS4wMy4wMS0uMDQuMDFjLS4xNiAwLS4zMi0uMDQtLjQ2LS4xM0w0LjE4IDQ5LjA0cy0uMjkuNTUgMCAxLjU0Yy4zLjk5Ljc2IDEuMzEgMS4wMSAxLjQ2bDU2LjggMzMuODNjLjYyLjM3IDEuMzIuNTYgMi4wMi41NmguMDR2LTMuMDV6Ii8+PHBhdGggZmlsbD0iIzYxNjE2MSIgZD0iTTY0IDgzLjM4Yy4wMSAwIC4wMy4wMS4wNC4wMWMuMTYgMCAuMzItLjA0LjQ2LS4xM2w1OS4zNi0zNC4yMnMuMjkuNTUgMCAxLjU0Yy0uMy45OS0uNzYgMS4zMS0xLjAxIDEuNDZsLTU2LjggMzMuODNjLS42Mi4zNy0xLjMyLjU2LTIuMDIuNTZoLS4wNHYtMy4wNXoiLz48cGF0aCBmaWxsPSIjOTc1RUVBIiBkPSJtMzUuNDUgNzAuMDZsLjMyLTIuODFTNjAuMjggNTMuOTIgNjIuNyA1Mi41MnM0Ljk2LTIuOTYgNi4wOS00LjIxYzItMi4yLjU2LTMuNTguNTYtMy41OHMtMS41OCAyLjU2LTUuMzUgMi4xMWMtMi4xNi0uMjYtNC45Ny0yLjAxLTUuNDQtMi44M3MtMjcuNjcgMTkuOS0yNy42NyAxOS45bC0uMTkgMy4zM3oiLz48cGF0aCBmaWxsPSIjZTJhNjEwIiBkPSJNNjkuMzUgNDQuNzRjLTIuNjIgMy42Ni03LjA2IDIuMDYtNy4wNiAyLjA2cy0xMy45MSA2LjY3LTE0LjQzIDUuNjZzMTEuNDktNy4xOSAxMS40OS03LjE5cy0uNjctMi40Ni0uNi0zLjUxYzAgMC0yMS43MiAxMy44Mi0yOS44NyAxOC40N2MtNC4yNyAyLjQ0LTUuMTggNC43NC01LjE3IDcuOThjMCAxLjQyLjAyIDYuMDMuMDQgOC43OGMwIC41MS0uMjIuOTktLjYxIDEuMzFhNS4xNiA1LjE2IDAgMCAwLTEuODkgMy45OWMwIDEuNTMuNjcgMi45IDEuNzMgMy44NWMuNTcuNTEuNDUgMS42MS41IDIuMzJjLjEgMS4zNiAwIDEuOTgtLjU2IDMuMjRjLS41NSAxLjIzLTEuMDYgMi40OS0xLjQxIDMuNzljLS4yNyAxLS40NSAyLjAzLS42MyAzLjA1Yy0xLjE5IDYuODMtMS43MyAxNC4xMy00Ljg4IDIwLjQxYS45OTMuOTkzIDAgMCAwIC40NSAxLjM0YTEuMDA3IDEuMDA3IDAgMCAwIDEuMzUtLjQ0YzEuNjQtMy4yNyAyLjQ5LTYuODUgMy4xOS0xMC40Yy0uMDQgMy4yMS0uMDYgNi40NS0uMTcgOS45NWMtLjAyLjY4LS4wNyAyLjA1LjU1IDIuMzVjMi4zMyAxLjEzIDIuMzMtMi4zNSAyLjMzLTIuMzVzLjAzIDMuMTMgMy4yIDMuMTNzMy40LTMuMTMgMy40LTMuMTNzLjIzIDIuODcgMS44NiAyLjczYy42Ni0uMDYgMS41My0uNDYgMS4yMi0zLjg5Yy0uMzEtMy40Mi0xLjA4LTE1LjY4LTEuNDEtMTkuNTZjLS40Ni01LjM3LTIuMjItOC41Ni0yLjU4LTEwLjQ2Yy0uMTMtLjcyLS4xNC0xLjQ3LjQzLTEuOTRhNS4xNjUgNS4xNjUgMCAwIDAgLjEzLTcuODhhMS43MSAxLjcxIDAgMCAxLS41OC0xLjQyYy4xOS0yLjU5LjQtNi4zNS41Ny03LjIyYy43NC0zLjkxIDIuNjctNC42MSA0LjY1LTUuNzdjMS45OC0xLjE3IDMwLjY2LTE0LjE5IDMyLjMzLTE1LjNjMy4wOS0yLjA3IDIuNDMtMy45NSAyLjQzLTMuOTUiLz48cGF0aCBmaWxsPSIjZmZjYTI4IiBkPSJNNjkuMzUgNDQuNzRjLTIuNDcgMy40OS03LjYgMS45My03LjYgMS45M3MtMTMuMTEgNS44MS0xMi4yNCA0Ljc2Yy44Ni0xLjA1IDkuODQtNi4xNiA5Ljg0LTYuMTZzLS42Ny0yLjQ2LS42LTMuNTFjMCAwLTIyLjEgMTIuNzctMzAuNjcgMTguOTFjLTIuMjEgMS41OS00Ljk1IDQuMTktMi43MiA2Ljc4YzEuMDMgMS4xOSAzLjAyIDEuNDQgNC4yOS41Yy43Ny0uNTYgMS4zNy0xLjM4IDIuMDUtMi4wM2MuODQtLjgyIDEuODYtMS4zNCAyLjg2LTEuOTNjMS45OC0xLjE3IDMwLjY2LTE0LjE5IDMyLjMzLTE1LjNjMy4xMi0yLjA3IDIuNDYtMy45NSAyLjQ2LTMuOTUiLz48cGF0aCBmaWxsPSIjOWU3NDBiIiBkPSJNMjYuMTEgOTEuODZjLTEuMzIgMC0yLjIxLS4xMS0zLjAyLS4zYS42Mi42MiAwIDAgMS0uNDgtLjY1bC4yNi0zLjgyYy4wMy0uMzkuNC0uNjYuNzgtLjU1Yy45LjI2IDIuNy41MiA1LjY0LS4xYy4zNi0uMDguNzIuMTcuNzYuNTRsLjQgMy44Yy4wMy4zMS0uMTcuNi0uNDcuNjdjLTEuNTMuMzUtMi42NC40MS0zLjg3LjQxIi8+PHBhdGggZmlsbD0iIzYxNjE2MSIgZD0iTTk5LjA2IDkxLjQyczEuNzctOS4yNCAxLjA2LTE5LjA3Yy0uMTItMS42Ni0xLjE0LTMuMDktMS45MyAyLjcyYy0uNDUgMy4zMy0xLjQzIDEzLjMtMy4xIDE5LjUzYzIuNTUtMS44NCAzLjk3LTMuMTggMy45Ny0zLjE4TTY1LjczIDM2Ljc5Yy43My4yMyAxLjQuNzkgMS41OSAxLjU0Yy4yNSAxLS4zOCAyLTEuMDYgMi43OGMtMS4zMyAxLjUzLTMuMTYgMi44Ny01LjE5IDIuOGMtLjY3LS4wMi0xLjM5LS4yNC0xLjgtLjc3Yy0uMjktLjM3LS4zOS0uODUtLjQyLTEuMzJjLS4xOC0zLjQzIDMuNy02LjAzIDYuODgtNS4wMyIvPjwvc3ZnPg==" alt="graduation">
-               <div id="graduation">
-                  <p><strong>Graduation</strong><br> <span>13 Products</span></p>
-               </div>
-            </div>
-            <div class="occasion-card">
-               <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCI+PGVsbGlwc2UgY3g9IjY0IiBjeT0iNTcuMDkiIGZpbGw9IiM0NzM1MmQiIHJ4PSI1NC41IiByeT0iNTEuMzEiLz48cGF0aCBmaWxsPSIjRjJDNkExIiBkPSJNMTA4LjYzIDY5Ljc4czguMyAxLjQ0IDguMyAxMC4zOGMwIDcuODktNi4wNiAxMS0xMi4xMSAxMVY2OS43OHptLTg5LjI2IDBzLTguMyAxLjQ0LTguMyAxMC4zOGMwIDcuODkgNi4wNiAxMSAxMi4xMSAxMVY2OS43OHoiLz48cGF0aCBmaWxsPSIjRjJDNkExIiBkPSJNOTUuNTkgNDIuOTVDODguMDMgMzMuNTMgNzUuMDIgMjkuNSA2NCAyOS41Yy0xMS4wMSAwLTI0LjAzIDQuMDQtMzEuNTggMTMuNDVjLTcuMzkgOS4yLTExLjI2IDIxLjA5LTExLjIgMzcuMDRjLjA2IDEyLjg2IDMuMzYgMjIuNzUgMTIuNjkgMzAuNTNjOC42NCA3LjIxIDE4LjYzIDExLjEgMjkuNDUgMTEuMWMxMC42NCAwIDIyLjM4LTMuNzIgMzAuNy0xMS4wNGM5LjEzLTguMDMgMTIuNjctMTcuNzMgMTIuNzMtMzAuNTljLjA2LTE1Ljk2LTMuODMtMjcuODQtMTEuMi0zNy4wNCIvPjxwYXRoIGZpbGw9IiNGMkM2QTEiIGQ9Ik03MC4yNSA4OS42NGMtMi4yLjYyLTQuNDguOTMtNi4yNS45M3MtNC4wNS0uMy02LjI1LS45M2MtLjk0LS4yNy0xLjMxLjYzLS45NyAxLjIyYy43IDEuMjMgMy41MSAzLjcxIDcuMjIgMy43MXM2LjUyLTIuNDggNy4yMi0zLjcxYy4zNC0uNTktLjAzLTEuNDgtLjk3LTEuMjIiLz48cGF0aCBmaWxsPSIjMzUyNjIwIiBkPSJNNzYuOTMgOTkuOEg1MS4wN2MtMS40OCAwLTIuMTIgMS0xLjE0IDIuNDljMS4zNyAyLjA5IDYuNDcgNi4xMSAxNC4wNyA2LjExczEyLjctNC4wMiAxNC4wNy02LjExYy45OC0xLjQ5LjM1LTIuNDktMS4xNC0yLjQ5Ii8+PHBhdGggZmlsbD0iIzQyMzEyYyIgZD0iTTQ2Ljg4IDgwLjM2YzAgMy44MS0yLjU1IDYuOS01LjcxIDYuOXMtNS43My0zLjA5LTUuNzMtNi45YzAtMy44MiAyLjU3LTYuOTEgNS43My02LjkxczUuNzEgMy4wOSA1LjcxIDYuOTFtNDUuNjggMGMwIDMuODEtMi41NSA2LjktNS43MSA2LjlzLTUuNzMtMy4wOS01LjczLTYuOWMwLTMuODIgMi41Ny02LjkxIDUuNzMtNi45MWMzLjE1IDAgNS43MSAzLjA5IDUuNzEgNi45MSIvPjxwYXRoIGZpbGw9IiM0NzM1MmQiIGQ9Ik0xOC44NSA3Ny40czEyLjQyLTEzLjAxIDE2Ljk4LTE3LjM5Yy4yOS0uMjguNzYtLjA0LjcyLjM2Yy0uMTggMS44MS0uMzIgMy43OS0uMzkgNC45OWMtLjAzLjU2LjQ3IDEgMS4wMi45YzguOTItMS42OSAxNy41LTUuNCAxOS44MS02LjQ0Yy4yOC0uMTMuNTkuMDkuNTguNDFjLS4wNSAxLjY1LS4wMyAzLjIzLS4wMSA0LjJjLjAxLjUyLjQ4LjkxIDEgLjgzYzguMTgtMS4yNiAxNS00LjYxIDE3LjI2LTUuODJjLjUyLS4yOCAxLjEyLS4zNCAxLjY4LS4xNGM0LjI0IDEuNTIgOS4zOSA0LjUyIDExLjI2IDUuNjVjLjQxLjI1Ljk0LjExIDEuMTgtLjMxYy43Mi0xLjI4IDEuNy0zLjI3IDIuMTYtNC4yMWMuMTMtLjI2LjQ2LS4zMy42Ny0uMTJjNi42NyA2LjU5IDE2LjM5IDE3LjEgMTYuMzkgMTcuMWw2Ljg3LTIyLjA2UzEwNC45IDE2LjEgNjYuMjMgMTYuMVMxMi45MSA1Ny45NyAxMi45MSA1Ny45N3oiLz48L3N2Zz4=" alt="get">
-               <div id="get">
-                  <p><strong>Get Well Soon</strong><br> <span>16 Products</span></p>
-               </div>
-            </div>
-         </div>
+      <section class="sect-41">
+        <section class="sect-41-info">
+          <div class="sect-41-discount-badge"><b> Flat 25% Discount </b></div>
+          <p class="p">Pure Bloom<br />Collection</p>
+          <p class="lorem">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <button class="button" style="background-color: #ff90e7; color: #000">
+            Shop Now &#8594;
+          </button>
+        </section>
+        <section class="sect-41-media">
+          <img src="purple image.png" />
+        </section>
       </section>
-      <main class="main">
-         <section class="sect-4">
-            <br>
-            <section>
-               <div>
-                  <p class="div" style="color: black;">Flat 20% Discount</p>
-               </div>
-               <p class="p">Lovely Fresh<br> Bouquets</p>
-               <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-               <button class="button">Shop Now   &#8594;</i></button>
-            </section>
-            <section>
-               <img src="whitebox image.png">
-            </section>
-         </section>
-         <section class="sect-41">
-            <br>
-            <section>
-               <div>
-                  <p class="div">Flat 25% Discount</p>
-               </div>
-               <p class="p">Pure Bloom<br>Collection</p>
-               <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-               <button class="button" style="background-color: rgb(229, 51, 208);">Shop Now &#8594;</i></button>
-            </section>
-            <section>
-               <img src="purple image.png">
-            </section>
-         </section>
-      </main>
-      <main class="main-2">
-         <section class="section">
-            <img src="video image.jpg">
-         </section>
-         <section class="section-p">
-            <p class="about">About Us</p>
-            <p class="share">Delivering Nature's<br><span style="color: black;">Beauty to Your Door</span></p>
-            <p class="lor">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa voluptas provident possimus corrupti sequi</p>
-            <div class="div-1">
-               <p>20+<br><span style="color: white; font-size: 15px;">Categories</span></p>
-               <p>1000+<br><span style="color: white; font-size: 15px;">Products</span></p>
-               <p>99%<br><span style="color: white; font-size: 15px;">Satisfied Customer</span></p>
-            </div>
-            <p style="font-family: Brush Script MT; font-size: 30px;">Jenny Alexander</p>
-         </section>
-      </main>
-      <main>
-         <section class="sect-5">
-            <div>
-               <p class="pro">Our Products</p>
-               <p class="our">Our <span style="color: #550099;">Top Seller Products</span></p>
-            </div>
-            <button>View All Products</button>
-         </section>
-         <section class="products" id="phones">
-            <div class="product">
-               <img src="bouquet1.png">
-               <div class="div-2">
-                  <p>05<br><span style="color: white;">Days</span></p>
-                  <p>:</p>
-                  <p>12<br><span style="color: white;">Hours</span></p>
-                  <p>:</p>
-                  <p>30<br><span style="color: white;">Mins</span></p>
-                  <p>:</p>
-                  <p>25<br><span style="color: white;">Secs</span></p>
-               </div>
-               <div class="flex1">
-                  <section style="margin-top: -370px; background-color: rgb(235, 117, 191); height: 40px; width: 90px; border-radius: 20px;">
-                     <p style="color: black; margin-top: 9px; margin-left: 10px;">50% Off</p>
-                  </section>
-                  <p class="flex-p_1" style="color: black; margin-left: -310px;">Bouquets</p>
-                  <div class="flex_1">
-                     <p class="flex-p_2" style="color: black;"> &#11088; 4.9</p>
-                  </div>
-               </div>
-               <div class="divr">
-                  <p class="flex-p_2" style="color: black;">Blue White Bouquets</p>
-                  <p class="flex-p_2" style="color: black;">$45.00<span style="color: rgba(0, 0, 0, 0.541); text-decoration: line-through;">$90.00</span></p>
-               </div>
-            </div>
-            <div class="product">
-               <img src="bouquet3.png">
-               <div class="flex12">
-                  <section style="margin-top: -370px; background-color: rgb(235, 117, 191); height: 40px; width: 90px; border-radius: 20px;">
-                     <p style="color: black; margin-top: 9px; margin-left: 10px;">20% Off</p>
-                  </section>
-                  <p class="flex-p_1" style="color: black; margin-left: -310px;">Bouquets</p>
-                  <div class="flex_1">
-                     <p class="flex-p_2" style="color: black;">&#11088; 4.9</p>
-                  </div>
-               </div>
-               <div class="divr-2">
-                  <p class="flex-p_2" style="color: black;">Lavenders Bouquets</p>
-                  <p class="flex-p_2" style="color: black;">$48.00<span style="color: rgba(0, 0, 0, 0.541); text-decoration: line-through;">$60.00</span></p>
-               </div>
-            </div>
-            <div class="product">
-            <img src="buoquet2.png">
+    </section>
+    <section class="main-2">
+      <section class="section">
+        <img src="video image.jpg" />
+      </section>
+      <section class="section-p">
+        <p class="about">About Us</p>
+        <p class="share">
+          Delivering Nature's<br /><span style="color: black"
+            >Beauty to Your Door</span
+          >
+        </p>
+        <p class="lor">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+          voluptas provident possimus corrupti sequi
+        </p>
+        <div class="div-1">
+          <p>
+            20+<br /><span style="color: white; font-size: 15px"
+              >Categories</span
+            >
+          </p>
+          <p>
+            1000+<br /><span style="color: white; font-size: 15px"
+              >Products</span
+            >
+          </p>
+          <p>
+            99%<br /><span style="color: white; font-size: 15px"
+              >Satisfied Customer</span
+            >
+          </p>
+        </div>
+        <p style="font-family: Brush Script MT; font-size: 30px">
+          Jenny Alexander
+        </p>
+      </section>
+    </section>
+    <section class="products-section">
+      <section class="sect-5">
+        <div class="sect-5-heading">
+          <p class="pro">Our Products</p>
+          <p class="our">
+            Our
+            <span style="color: #550099; margin-left: 5px">
+              Top Seller Products</span
+            >
+          </p>
+        </div>
+        <button class="sect-5-button">View All Products</button>
+      </section>
+      <section class="sect-5-products" id="phones">
+        <div class="sect-5-product">
+          <img src="bouquet1.png" />
+
+          <div class="off-tagg-timer">
+            <p>05<br /><span >Days</span></p>
+            <p>:</p>
+            <p>12<br /><span>Hours</span></p>
+            <p>:</p>
+            <p>30<br /><span>Mins</span></p>
+            <p>:</p>
+            <p>25<br /><span>Secs</span></p>
+          </div>
             <div class="flex12">
-               <section style="margin-top: -370px; background-color: rgb(235, 117, 191); height: 40px; width: 90px; border-radius: 20px;">
-                  <p style="color: black; margin-top: 9px; margin-left: 10px;">20% Off</p>
-               </section>
-               <p class="flex-p_1" style="color: black; margin-left: -310px;">Bouquets</p>
-               <div class="flex_1">
-                  <p class="flex-p_2" style="color: black;">&#11088; 4.9</p>
-               </div>
+            <section class="off-tagg">
+              <p>50% Off</p>
+            </section>
+            <p class="flex-p_1" >
+              Bouquets
+            </p>
+            <div class="flex_1">
+              <p class="flex-p_2" style="color: black">&#11088; 4.9</p>
             </div>
-            <div class="divr-2">
-               <p class="flex-p_2" style="color: black;">Lavenders Bouquets</p>
-               <p class="flex-p_2" style="color: black;">$24.00 <span style="color: rgba(0, 0, 0, 0.541); text-decoration: line-through;">$30.00</span></p>
+          </div>
+          <div class="divr-2">
+            <p class="flex-p_2" style="color: black">Lavenders Bouquets</p>
+            <p class="flex-p_2" style="color: black">
+              $48.00<span
+                style="
+                  color: rgba(0, 0, 0, 0.541);
+                  text-decoration: line-through;
+                "
+                >$60.00</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="sect-5-product">
+          <img src="bouquet3.png" />
+          <div class="flex12">
+            <section class="off-tagg">
+              <p>20% Off</p>
+            </section>
+            <p class="flex-p_1">
+              Bouquets
+            </p>
+            <div class="flex_1">
+              <p class="flex-p_2" style="color: black">&#11088; 4.9</p>
             </div>
-         </section>
-      </main>
-      <div class="Holiday-sales">
+          </div>
+          <div class="divr-2">
+            <p class="flex-p_2" style="color: black">Lavenders Bouquets</p>
+            <p class="flex-p_2" style="color: black">
+              $48.00<span
+                style="
+                  color: rgba(0, 0, 0, 0.541);
+                  text-decoration: line-through;
+                "
+                >$60.00</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="sect-5-product">
+          <img src="buoquet2.png" />
+          <div class="flex12">
+            <section class="off-tagg">
+              <p>20% Off</p>
+            </section>
+            <p class="flex-p_1" >
+              Bouquets
+            </p>
+            <div class="flex_1">
+              <p class="flex-p_2" style="color: black">&#11088; 4.9</p>
+            </div>
+          </div>
+          <div class="divr-2">
+            <p class="flex-p_2" style="color: black">Lavenders Bouquets</p>
+            <p class="flex-p_2" style="color: black">
+              $24.00
+              <span
+                style="
+                  color: rgba(0, 0, 0, 0.541);
+                  text-decoration: line-through;
+                "
+                >$30.00</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="sect-5-product">
+          <img src="buoquet2.png" />
+          <div class="flex12">
+            <section class="off-tagg">
+              <p>20% Off</p>
+            </section>
+            <p class="flex-p_1" >
+              Bouquets
+            </p>
+            <div class="flex_1">
+              <p class="flex-p_2" style="color: black">&#11088; 4.9</p>
+            </div>
+          </div>
+          <div class="divr-2">
+            <p class="flex-p_2" style="color: black">Lavenders Bouquets</p>
+            <p class="flex-p_2" style="color: black">
+              $24.00
+              <span
+                style="
+                  color: rgba(0, 0, 0, 0.541);
+                  text-decoration: line-through;
+                "
+                >$30.00</span
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="Holiday-sales">
       <section class="banner">
-         <div class="side side-left">
-            <img src="images/holiday sales left.jpg" alt="Left">
-         </div>
-         <div class="center">
+        <div class="side side-left">
+          <img src="images/holiday sales left.jpg" alt="Left" />
+        </div>
+        <div class="center">
+          <div>
             <h2 class="title">Holiday <span>Sales</span></h2>
             <p class="subtitle">Get 50% off - Limited Time Offer!</p>
             <div class="countdown">
-               <div class="time">
-                  <span class="num">04</span>
-                  <span class="label">Days</span>
-               </div>
-               <div class="colon">:</div>
-               <div class="time">
-                  <span class="num">14</span>
-                  <span class="label">Hours</span>
-               </div>
-               <div class="colon">:</div>
-               <div class="time">
-                  <span class="num">48</span>
-                  <span class="label">Minutes</span>
-               </div>
-               <div class="colon">:</div>
-               <div class="time">
-                  <span class="num">18</span>
-                  <span class="label">Seconds</span>
-               </div>
+              <div class="time">
+                <span class="num">04</span>
+                <span class="label">Days</span>
+              </div>
+              <div class="colon">:</div>
+              <div class="time">
+                <span class="num">14</span>
+                <span class="label">Hours</span>
+              </div>
+              <div class="colon">:</div>
+              <div class="time">
+                <span class="num">48</span>
+                <span class="label">Minutes</span>
+              </div>
+              <div class="colon">:</div>
+              <div class="time">
+                <span class="num">18</span>
+                <span class="label">Seconds</span>
+              </div>
             </div>
             <a class="cta" href="google.com">Shop Now →</a>
-         </div>
-         <div class="side side-right">
-            <img src="images/holiday sales right.jpeg" alt="Right">
-         </div>
+          </div>
+        </div>
+        <div class="side side-right">
+          <img src="images/holiday sales right.jpeg" alt="Right" />
+        </div>
       </section>
       <div class="design-ribbon">
-         <img src="./assets/images/flowers.jpg" />
-         <span>Birthday</span>
-         <img src="./assets/images/flowers.jpg" />
-         <span> Weddings</span>
-         <img src="./assets/images/flowers.jpg" />
-         <span> Anniversary</span>
-         <img src="./assets/images/flowers.jpg" />
-         <span>Thank you</span>
-         <img src="./assets/images/flowers.jpg" />
-         <span>Graduation</span>
-         <img src="./assets/images/flowers.jpg" />
+        <img src="./assets/images/flowers.jpg" />
+        <span>Birthday</span>
+        <img src="./assets/images/flowers.jpg" />
+        <span> Weddings</span>
+        <img src="./assets/images/flowers.jpg" />
+        <span> Anniversary</span>
+        <img src="./assets/images/flowers.jpg" />
+        <span>Thank you</span>
+        <img src="./assets/images/flowers.jpg" />
+        <span>Graduation</span>
+        <img src="./assets/images/flowers.jpg" />
       </div>
-      <section class="New-arrivals">
-         <div class="arrivals-header">
-            <h2 class="arrival-subtitle">New Arrival</h2>
-            <h2 class="arrival-title"><span>New Arrival </span>Products</h2>
-         </div>
-         <div class="arrival-products">
-            <div class="product-card">
-               <div class="product-image-container">
-                  <span class="discount-badge">30% off</span>
-                  <img src="images/fresh-flower-basket.jpg" alt="Fresh Flower Basket" class="product-image">
-                  <div class="product-actions">
-                     <button class="action-btn">⤨</button>
-                     <button class="action-btn">⭐</button>
-                     <button class="action-btn">🛒</button>
-                  </div>
-               </div>
-               <div class="product-info">
-                  <div class="product-category">
-                     <span class="category-text"> Basket</span>
-                     <div class="rating">
-                        <span class="star">⭐</span>
-                        <span class="rating-number">5.0</span>
-                     </div>
-                  </div>
-                  <h3 class="product-title">Fresh Flower Basket</h3>
-                  <div class="product-price">
-                     <span class="current-price">$42.00</span>
-                     <span class="original-price">$60.00</span>
-                  </div>
-                  <p class="product-description">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit</p>
-                  <button class="shop-now-btn">Shop Now →</button>
-               </div>
-            </div>
-            <div class="product-card">
-               <div class="product-image-container">
-                  <span class="discount-badge">50% off</span>
-                  <img src="images/flowers-in-a-vase.jpg" alt="Red White Rose" class="product-image">
-               </div>
-               <div class="product-info">
-                  <div class="product-category">
-                     <span class="category-text"> Flowers</span>
-                     <div class="rating">
-                        <span class="star">⭐</span>
-                        <span class="rating-number">5.0</span>
-                     </div>
-                  </div>
-                  <h3 class="product-title">Red White Rose</h3>
-                  <div class="product-price">
-                     <span class="current-price">$30.00</span>
-                     <span class="original-price">$60.00</span>
-                  </div>
-                  <p class="product-description">Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit</p>
-                  <button class="shop-now-btn">Shop Now →</button>
-               </div>
-            </div>
-         </div>
-         <div class="promo-banner">
-            <div class="promo-content">
-               <p class="promo-tag">Weekly Deals</p>
-               <h2 class="promo-title">Unbeatable Weekly Offers<span> on Beautiful Flowers</span> </h2>
-               <p class="promo-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
-               <button class="promo-btn">Shop Now →</button>
-            </div>
-            <div class="promo-image-container">
-               <img src="images/newarrivals.jpg" alt="Woman with flowers" class="promo-image">
-            </div>
-         </div>
-      </section>
-      <div class="design-ribbon">
-         <img src="./assets/images/flowers.jpg" />
-         <span>Birthday</span>
-         <img src="./assets/images/flowers.jpg" />
-         <span> Weddings</span>
-         <img src="./assets/images/flowers.jpg" />
-         <span> Anniversary</span>
-         <img src="./assets/images/flowers.jpg" />
-         <span>Thank you</span>
-         <img src="./assets/images/flowers.jpg" />
-         <span>Graduation</span>
-         <img src="./assets/images/flowers.jpg" />
+    </section>
+    <section class="New-arrivals">
+      <div class="arrivals-header">
+        <h2 class="arrival-subtitle">New Arrival</h2>
+        <h2 class="arrival-title"><span>New Arrival </span>Products</h2>
       </div>
-      <section class="deals">
-         <div class="deals-header">
-            <div class = "deals-sub-header">
-               <h2 class="dealstitle">Best Seller</h2>
-               <h3 class="dealssubtitle"><span>Deals</span> of the Day</h3>
+      <div class="arrival-products">
+        <div class="product-card">
+          <div class="product-image-container">
+            <span class="discount-badge">30% off</span>
+            <img
+              src="images/fresh-flower-basket.jpg"
+              alt="Fresh Flower Basket"
+              class="product-image"
+            />
+            <div class="product-actions">
+              <button class="action-btn">⤨</button>
+              <button class="action-btn">⭐</button>
+              <button class="action-btn">🛒</button>
             </div>
-            <p class="dealstext">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
-         </div>
-         <div class="deals-content">
-            <div class="deals-promo">
-               <img src="images/flower-holded.jpg" alt="Promo Flower">
-               <div class="promo-text">
-                  <h4>50% Off</h4>
-                  <p>06 Dec - 16 Dec</p>
-                  <a href="#" class="cta">Shop Now</a>
-               </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category">
+              <span class="category-text"> Basket</span>
+              <div class="rating">
+                <span class="star">⭐</span>
+                <span class="rating-number">5.0</span>
+              </div>
             </div>
-            <div class="deals-grid">
-               <div class="deal-card">
-                  <div class="badge pink">50% off</div>
-                  <img src="images/flower1.jpg" alt="Rose Boutique">
-                  <div class="product-actions">
-                     <button class="action-btn">⤨</button>
-                     <button class="action-btn">⭐</button>
-                     <button class="action-btn">🛒</button>
-                  </div>
-                  <div class = "dealnames">
-                     <p class="dealssubtittle">Bouquets
-                     </p>
-                     <div class="rating">
-                        <span class="star">⭐</span>
-                        <span class="rating-number">4.8</span>
-                     </div>
-                  </div>
-                  <h4>Rose Boutique</h4>
-                  <p class="price"><span>$35.00</span> <del>$70.00</del></p>
-               </div>
-               <div class="deal-card">
-                  <div class="badge pink">30% off</div>
-                  <img src="images/flower2.jpg" alt="Rose Bouquets">
-                  <div class = "dealnames">
-                     <p class="dealssubtittle">Bouquets
-                     </p>
-                     <div class="rating">
-                        <span class="star">⭐</span>
-                        <span class="rating-number">4.9</span>
-                     </div>
-                  </div>
-                  <h4>Rose Bouquets</h4>
-                  <p class="price"><span>$35.00</span> <del>$50.00</del></p>
-               </div>
-               <div class="deal-card">
-                  <div class="badge pink">20% off</div>
-                  <img src="images/flower3.jpg" alt="Flower Basket">
-                  <div class = "dealnames">
-                     <p class="dealssubtittle">Basket
-                     </p>
-                     <div class="rating">
-                        <span class="star">⭐</span>
-                        <span class="rating-number">5.0</span>
-                     </div>
-                  </div>
-                  <h4>Flower Basket</h4>
-                  <p class="price"><span>$80.00</span> <del>$100.00</del></p>
-               </div>
-               <div class="deal-card">
-                  <div class="badge pink">10% off</div>
-                  <img src="images/flower4.jpg" alt="Colorful Rose">
-                  <div class = "dealnames">
-                     <p class="dealssubtittle">Bouquets
-                     </p>
-                     <div class="rating">
-                        <span class="star">⭐</span>
-                        <span class="rating-number">4.8</span>
-                     </div>
-                  </div>
-                  <h4>Colorful Rose</h4>
-                  <p class="price"><span>$45.00</span> <del>$50.00</del></p>
-               </div>
-               <div class="deal-card">
-                  <div class="badge pink">50% off</div>
-                  <img src="images/flower5.jpg" alt="Pink Flowers">
-                  <div class = "dealnames">
-                     <p class="dealssubtittle">Flower
-                     </p>
-                     <div class="rating">
-                        <span class="star">⭐</span>
-                        <span class="rating-number">4.9</span>
-                     </div>
-                  </div>
-                  <h4>Pink Flowers</h4>
-                  <p class="price"><span>$20.00</span> <del>$40.00</del></p>
-               </div>
-               <div class="deal-card">
-                  <div class="badge pink">10% off</div>
-                  <img src="images/flower6.jpg" alt="Rose Bouquets">
-                  <div class = "dealnames">
-                     <p class="dealssubtittle">Bouquets
-                     </p>
-                     <div class="rating">
-                        <span class="star">⭐</span>
-                        <span class="rating-number">4.8</span>
-                     </div>
-                  </div>
-                  <h4>Rose Bouquets</h4>
-                  <p class="price"><span>$90.00</span> <del>$100.00</del></p>
-               </div>
+            <h3 class="product-title">Fresh Flower Basket</h3>
+            <div class="product-price">
+              <span class="current-price">$42.00</span>
+              <span class="original-price">$60.00</span>
             </div>
-         </div>
-      </section>
-      <section id="testimonial">
-         <h3 class="testimonial-tag">Testimonial</h3>
-         <h2>What <span class="colored">Our Clients Say</span></h2>
-         <div class="testimonial-section">
-            <div class="testimonial-card">
-               <div class="star-png">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <h3>5.0</h3>
-               </div>
-               <h3>Gorgeous Bouquets!</h3>
-               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam earum perspiciatis ab dolor, eaque quas cum molestias fugiat totam ratione, pariatur quaerat minima, provident similique aut explicabo commodi! Amet iusto est sunt laudantium odio aliquam qui animi ea culpa? Veniam?</p>
-               <div class="review-image">
-                  <img src="https://media.istockphoto.com/id/2178339312/photo/confident-mature-businesswoman-on-white-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=rTlt3GqyZTCuaTEeF2-h0UF9SUV69DvyjVCrshwtXu4=">
-                  <div>
-                     <h3>Jenny Wilson</h3>
-                     <p>Happy Customer</p>
-                  </div>
-               </div>
-            </div>
-            <div class="testimonial-card">
-               <div class="star-png">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <h3>5.0</h3>
-               </div>
-               <h3>Beautiful Flowers!</h3>
-               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam earum perspiciatis ab dolor, eaque quas cum molestias fugiat totam ratione, pariatur quaerat minima, provident similique aut explicabo commodi! Amet iusto est sunt laudantium odio aliquam qui animi ea culpa? Veniam?</p>
-               <div class="review-image">
-                  <img src="https://media.istockphoto.com/id/2099403180/photo/laughing-yougn-businesswoman-standing-with-her-arms-crossed-against-an-office-wall.webp?a=1&b=1&s=612x612&w=0&k=20&c=fd9yaVrgWeZIHTfllbUmxTjPRVD2b79Yzt4HQlQfNSA=" alt="">
-                  <div>
-                     <h3>Jenny Wilson</h3>
-                     <p>Happy Customer</p>
-                  </div>
-               </div>
-            </div>
-            <div class="slider">
-               <i class="fa-solid fa-minus colored"></i>
-               <i class="fa-solid fa-minus"></i>
-               <i class="fa-solid fa-minus"></i>
-               <i class="fa-solid fa-minus"></i>
-            </div>
-         </div>
-      </section>
-      <section id="news-and-blogs">
-         <div>
-            <span class="news-and-blogs-section">News & Blogs </span>
-            <div class="view-all-blogs">
-               <h3>Our Latest <span class="colored">News & Blogs</span></h3>
-               <button class="view-blogs">View All Blogs</button>
-            </div>
-         </div>
-         <div class="blog-cards">
-            <div class="blog-card">
-               <img src="https://media.istockphoto.com/id/1500090903/photo/anonymous-african-american-woman-in-an-orange-dress-holding-a-flower-bouquet.webp?a=1&b=1&s=612x612&w=0&k=20&c=ss2dWdcchYKBqrTnr3lqfcSHOM_BKHl3_QeGhKwehnQ=">
-               <span class="tag">Wedding Bouquet</span>
-               <div class="blog-card-info">
-                  <span>Jenny Alexander . 13 Dec 2024</span>
-                  <h4>Choosing the Perfect Wedding Bouquet for Your Big Day</h4>
-                  <a href="#" class="colored bold">Read More</a>
-               </div>
-            </div>
-            <div class="blog-card">
-               <img src="https://media.istockphoto.com/id/1368204520/photo/happy-woman-smelling-blooming-purple-orchid-holding-pot-girl-gardener-taking-care-of-home.webp?a=1&b=1&s=612x612&w=0&k=20&c=-0bzy4VtnnoUja-01ktwn3Z71p2qg9IzsvKHR5jm9zk=">
-               <span class="tag">Wedding Bouquet</span>
-               <div class="blog-card-info">
-                  <span>Jenny Alexander . 13 Dec 2024</span>
-                  <h4>Celebrating Love: The Best Flowers For Every Anniversary</h4>
-                  <a href="#" class="colored bold">Read More</a>
-               </div>
-            </div>
-            <div class="blog-card">
-               <img src="https://media.istockphoto.com/id/2152939377/photo/girl-covers-her-face-with-a-bouquet-of-flowers-on-a-clean-blue-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=5AB5HXg65GepVySBCJBxJhUZp2mulK8QOQzi5gL2Usw="alt="">
-               <span class="tag">Bouquet Tips</span>
-               <div class="blog-card-info">
-                  <span>Jenny Alexander . 13 Dec 2024</span>
-                  <h4>Top Tips for Designing Your Floral Bouquets for Maximum...</h4>
-                  <a href="#" class="colored bold">Read More</a>
-               </div>
-            </div>
-         </div>
-      </section>
-      <div class="design-ribbon">
-         <img src="./assets/images/flowers.jpg" />
-         <span>Birthday</span>
-         <img src="./assets/images/flowers.jpg" />
-         <span> Weddings</span>
-         <img src="./assets/images/flowers.jpg" />
-         <span> Anniversary</span>
-         <img src="./assets/images/flowers.jpg" />
-         <span>Thank you</span>
-         <img src="./assets/images/flowers.jpg" />
-         <span>Graduation</span>
-         <img src="./assets/images/flowers.jpg" />
-      </div>
-      <div class="follow-us-section">
-         <div class="follow-us-section-header">
-            <p>Follow Us</p>
-            <h3>Follow Us On <span>Instagram</span></h3>
-         </div>
-         <div class="image-gallery">
-            <div class="image-gallery-section-1 multi-columns">
-               <div class="image-card">
-                  <img src="./assets/images/image-5.png" />
-               </div>
-               <div class="image-card">
-                  <img src="./assets/images/image-2.png" />
-               </div>
-               <div class="image-card">
-                  <img src="./assets/images/image-3.png" />
-               </div>
-               <div class="image-card">
-                  <img src="./assets/images/image-4.png" />
-               </div>
-            </div>
-            <div class="image-gallery-section-2 image-card">
-               <img src="./assets/images/image-1.png" />
-            </div>
-            <div class="image-gallery-section-6 multi-columns">
-               <div class="image-card">
-                  <img src="./assets/images/image-7.png" />
-               </div>
-               <div class="image-card">
-                  <img src="./assets/images/image-8.png" />
-               </div>
-               <div class="image-card">
-                  <img src="./assets/images/image-9.png" />
-               </div>
-               <div class="image-card">
-                  <img src="./assets/images/image-3.png" />
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="design-ribbon">
-         <img src="./assets/images/flowers.jpg" />
-         <span>Birthday</span>
-         <img src="./assets/images/flowers.jpg" />
-         <span> Weddings</span>
-         <img src="./assets/images/flowers.jpg" />
-         <span> Anniversary</span>
-         <img src="./assets/images/flowers.jpg" />
-         <span>Thank you</span>
-         <img src="./assets/images/flowers.jpg" />
-         <span>Graduation</span>
-         <img src="./assets/images/flowers.jpg" />
-      </div>
-      <div class="FAQs-section">
-         <div class="FAQs-section-header">
-            <p>FAQs</p>
-            <h3>Question?<span>Look here.</span></h3>
-         </div>
-         <div class="question-section">
-            <div class="question-section-1">
-               <div class="question-box">
-                  <div>
-                     <b>What types of flowers do you offer?</b>
-                     <p class="highlighted-paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                        do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                        eiusmod tempor incididunt ut labore...
-                     </p>
-                  </div>
-                  <span class="handler-close">+</span>
-                  <span class="handler-open">–</span>
-               </div>
-               <div class="question-box">
-                  <div>
-                     <b>Do you offer same-day delivery?</b>
-                     <p class="highlighted-paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                        do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                        eiusmod tempor incididunt ut labore...
-                     </p>
-                  </div>
-                  <span class="handler-close">+</span>
-                  <span class="handler-open">–</span>
-               </div>
-               <div class="question-box">
-                  <div>
-                     <b>Do you deliver outside your local area?</b>
-                     <p class="highlighted-paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                        do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                        eiusmod tempor incididunt ut labore...
-                     </p>
-                  </div>
-                  <span class="handler-close">+</span>
-                  <span class="handler-open">–</span>
-               </div>
-               <div class="question-box">
-                  <div>
-                     <b>What payment methods do you accept?</b>
-                     <p class="highlighted-paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                        do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                        eiusmod tempor incididunt ut labore...
-                     </p>
-                  </div>
-                  <span class="handler-close">+</span>
-                  <span class="handler-open">–</span>
-               </div>
-               <div class="question-box">
-                  <div>
-                     <b>Do you deliver to offices or event venues?</b>
-                     <p class="highlighted-paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                        do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                        eiusmod tempor incididunt ut labore...
-                     </p>
-                  </div>
-                  <span class="handler-close">+</span>
-                  <span class="handler-open">–</span>
-               </div>
-               <div class="question-box">
-                  <div>
-                     <b>How do I track my order?</b>
-                     <p class="highlighted-paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                        do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                        eiusmod tempor incididunt ut labore...
-                     </p>
-                  </div>
-                  <span class="handler-close">+</span>
-                  <span class="handler-open">–</span>
-               </div>
-            </div>
-            <div class="question-section-2">
-               <div class="question-box-2">
-                  <div class="question-box-2-icon">
-                     <img src="./assets/images/icon4.png" />
-                  </div>
-                  <div class="question-box-2-text">
-                     <b>Do you have different questions?</b>
-                     <p>
-                        our teams will answer all your questions. <br />
-                        we ensure a quick response.
-                     </p>
-                  </div>
-                  <button class="question-box-2-button">Contact Us</button>
-               </div>
-            </div>
-         </div>
-         <div class="FAQs-answers">
-            <div class="FAQs-answer">
-               <div class="icon">
-                  <img src="./assets/images/icon1.png" />
-               </div>
-               <div class="info">
-                  <b>Free Shipping</b>
-                  <p>Free shipping for order above $50</p>
-               </div>
-            </div>
-            <div class="FAQs-answer">
-               <div class="icon">
-                  <img src="./assets/images/icon2.png" />
-               </div>
-               <div class="info">
-                  <b>Flexible payment</b>
-                  <p>Multiple secure payment options</p>
-               </div>
-            </div>
-            <div class="FAQs-answer">
-               <div class="icon">
-                  <img src="./assets/images/icon3.png" />
-               </div>
-               <div class="info">
-                  <b>24×7 Support</b>
-                  <p>We support online all days</p>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="newsletter-section">
-         <div class="newsletter-section-header">
-            <p class="newsletter-heading">Our Newsletter</p>
-            <h3>
-               Subscribe to Our Newsletter to <br /><span
-                  >Get Updates on Our Latest Offers</span
-                  >
-            </h3>
-            <p class="discount-paragraph">
-               Get 20% off on your first order by subscribing to our newsletter
+            <p class="product-description">
+              Lorem ipsum dolor sit amet,<br />
+              consectetur adipiscing elit
             </p>
-            <form class="newsletter-subscription-section">
-               <input
-                  class="email"
-                  type="email"
-                  placeholder="Enter Email Address"
-                  required
-                  />
-               <button>Subscribe</button>
-            </form>
-         </div>
+            <button class="shop-now-btn">Shop Now →</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image-container">
+            <span class="discount-badge">30% off</span>
+            <img
+              src="images/fresh-flower-basket.jpg"
+              alt="Fresh Flower Basket"
+              class="product-image"
+            />
+            <div class="product-actions">
+              <button class="action-btn">⤨</button>
+              <button class="action-btn">⭐</button>
+              <button class="action-btn">🛒</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category">
+              <span class="category-text"> Basket</span>
+              <div class="rating">
+                <span class="star">⭐</span>
+                <span class="rating-number">5.0</span>
+              </div>
+            </div>
+            <h3 class="product-title">Fresh Flower Basket</h3>
+            <div class="product-price">
+              <span class="current-price">$42.00</span>
+              <span class="original-price">$60.00</span>
+            </div>
+            <p class="product-description">
+              Lorem ipsum dolor sit amet,<br />
+              consectetur adipiscing elit
+            </p>
+            <button class="shop-now-btn">Shop Now →</button>
+          </div>
+        </div>
       </div>
-      <footer class="footer">
-         <div class="footer-container">
-            <div class="footer-brand">
-               <h2>
-                  <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiIgdmlld0JveD0iMCAwIDI2IDI2Ij48ZyBmaWxsPSJub25lIj48ZGVmcz48bWFzayBpZD0iU1ZHbkw1dlNjU1ciPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0wIDBoMjZ2MjZIMHoiLz48ZyBmaWxsPSIjMDAwIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xOS40OSAxNi43MTRhNC4wMDMgNC4wMDMgMCAwIDAgMC03LjQyN3EuMDEtLjE0My4wMS0uMjg3QTQgNCAwIDAgMCAxMyA1Ljg3N2E0IDQgMCAwIDAtNi40OSAzLjQxYTQuMDAzIDQuMDAzIDAgMCAwIDAgNy40MjdxLS4wMS4xNDItLjAxLjI4NmE0IDQgMCAwIDAgNi41IDMuMTIzYTQgNCAwIDAgMCA2LjQ5LTMuNDFtLTIuMTA4LTcuMDM2YTEgMSAwIDAgMCAuODM1IDEuMzM0YTIgMiAwIDAgMSAwIDMuOTc2YTEgMSAwIDAgMC0uODM1IDEuMzM0cS4xMTcuMzI0LjExOC42NzhhMiAyIDAgMCAxLTMuNjY3IDEuMTA1YTEgMSAwIDAgMC0xLjY2NiAwYTIgMiAwIDAgMS0zLjU1LTEuNzgzYTEgMSAwIDAgMC0uODM0LTEuMzMzYTIgMiAwIDAgMSAwLTMuOTc3YTEgMSAwIDAgMCAuODM1LTEuMzM0YTIgMiAwIDAgMSAzLjU1LTEuNzgzYTEgMSAwIDAgMCAxLjY2NSAwYTIgMiAwIDAgMSAzLjU1IDEuNzgzIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBkPSJNMTYuNSAxM2EzLjUgMy41IDAgMSAxLTcgMGEzLjUgMy41IDAgMCAxIDcgMCIvPjwvZz48L21hc2s+PC9kZWZzPjxjaXJjbGUgY3g9IjEzIiBjeT0iMTMiIHI9IjEzIiBmaWxsPSIjRkU5Q0VGIiBtYXNrPSJ1cmwoI1NWR25MNXZTY1NXKSIvPjwvZz48L3N2Zz4=" alt="">
-                  Flower Shop.
-               </h2>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-               <div class="footer-socials">
-                  <a href="http://facebook.com" class="facebook" aria-label="facebook">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="#560099" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"/>
-                     </svg>
-                  </a>
-                  <a href="http://X.com" class="X" aria-label="twitter">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="none" stroke="#5C03A1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m13.081 10.712l-4.786-6.71a.6.6 0 0 0-.489-.252H5.28a.6.6 0 0 0-.488.948l6.127 8.59m2.162-2.576l6.127 8.59a.6.6 0 0 1-.488.948h-2.526a.6.6 0 0 1-.489-.252l-4.786-6.71m2.162-2.576l5.842-6.962m-8.004 9.538L5.077 20.25"/>
-                     </svg>
-                  </a>
-                  <a href="http://pinterest.com" class="pinterest" aria-label="pinterest">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="#560099" fill-rule="evenodd" d="M3.421 8.447C3.797 4.73 7.19 1 12 1c3.328 0 5.656 1.261 7.045 3.181c1.34 1.853 1.67 4.13 1.444 5.999c-.196 1.625-.71 3.529-1.753 5.025c-1.09 1.562-2.815 2.726-5.203 2.487c-1.203-.12-2.096-.587-2.75-1.189a358 358 0 0 1-.702 2.044a181 181 0 0 0-1.153 3.412a1.5 1.5 0 0 1-2.856-.918c.33-1.024.745-2.23 1.175-3.475l.203-.591a153 153 0 0 0 1.491-4.495c-.07-.146-.149-.312-.228-.49a10 10 0 0 1-.379-.99c-.102-.325-.215-.764-.215-1.207c0-.904.21-1.802.793-2.468a2.45 2.45 0 0 1 2.41-.79c1.18.26 1.415 1.373 1.463 1.75c.062.49.006 1.037-.074 1.532c-.123.764-.358 1.694-.647 2.69a3.7 3.7 0 0 0 .26 1.06c.247.585.644 1.054 1.507 1.14c1.076.108 1.83-.339 2.444-1.218c.66-.946 1.072-2.315 1.236-3.669c.157-1.305-.098-2.777-.897-3.88C15.864 4.902 14.5 4 12 4C8.811 4 6.635 6.48 6.406 8.749c-.158 1.563.192 2.655.54 3.163a1.5 1.5 0 1 1-2.477 1.694c-.847-1.238-1.257-3.09-1.048-5.159" clip-rule="evenodd"/>
-                     </svg>
-                  </a>
-                  <a href="http://instagram.com" class="insta" aria-label="instagram">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="#560099" d="M12.001 9a3 3 0 1 0 0 6a3 3 0 0 0 0-6m0-2a5 5 0 1 1 0 10a5 5 0 0 1 0-10m6.5-.25a1.25 1.25 0 0 1-2.5 0a1.25 1.25 0 0 1 2.5 0M12.001 4c-2.474 0-2.878.007-4.029.058c-.784.037-1.31.142-1.798.332a2.9 2.9 0 0 0-1.08.703a2.9 2.9 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.007 9.075 4 9.461 4 12c0 2.475.007 2.878.058 4.029c.037.783.142 1.31.331 1.797c.17.435.37.748.702 1.08c.337.336.65.537 1.08.703c.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.475 0 2.878-.007 4.029-.058c.782-.037 1.308-.142 1.797-.331a2.9 2.9 0 0 0 1.08-.703c.337-.336.538-.649.704-1.08c.19-.492.296-1.018.332-1.8c.052-1.103.058-1.49.058-4.028c0-2.474-.007-2.878-.058-4.029c-.037-.782-.143-1.31-.332-1.798a2.9 2.9 0 0 0-.703-1.08a2.9 2.9 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.926 4.006 14.54 4 12 4m0-2c2.717 0 3.056.01 4.123.06c1.064.05 1.79.217 2.427.465c.66.254 1.216.598 1.772 1.153a4.9 4.9 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.047 1.066.06 1.405.06 4.122s-.01 3.056-.06 4.122s-.218 1.79-.465 2.428a4.9 4.9 0 0 1-1.153 1.772a4.9 4.9 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465c-1.067.047-1.406.06-4.123.06s-3.056-.01-4.123-.06c-1.064-.05-1.789-.218-2.427-.465a4.9 4.9 0 0 1-1.772-1.153a4.9 4.9 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.012 15.056 2 14.717 2 12s.01-3.056.06-4.122s.217-1.79.465-2.428a4.9 4.9 0 0 1 1.153-1.772A4.9 4.9 0 0 1 5.45 2.525c.637-.248 1.362-.415 2.427-.465C8.945 2.013 9.284 2 12.001 2"/>
-                     </svg>
-                  </a>
-                  <a href="http://youtube.com" class="youtube" aria-label="youtube">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <g fill="none" fill-rule="evenodd">
-                           <path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/>
-                           <path fill="#560099" d="M12 4c.855 0 1.732.022 2.582.058l1.004.048l.961.057l.9.061l.822.064a3.8 3.8 0 0 1 3.494 3.423l.04.425l.075.91c.07.943.122 1.971.122 2.954s-.052 2.011-.122 2.954l-.075.91l-.04.425a3.8 3.8 0 0 1-3.495 3.423l-.82.063l-.9.062l-.962.057l-1.004.048A62 62 0 0 1 12 20a62 62 0 0 1-2.582-.058l-1.004-.048l-.961-.057l-.9-.062l-.822-.063a3.8 3.8 0 0 1-3.494-3.423l-.04-.425l-.075-.91A41 41 0 0 1 2 12c0-.983.052-2.011.122-2.954l.075-.91l.04-.425A3.8 3.8 0 0 1 5.73 4.288l.821-.064l.9-.061l.962-.057l1.004-.048A62 62 0 0 1 12 4m-2 5.575v4.85c0 .462.5.75.9.52l4.2-2.425a.6.6 0 0 0 0-1.04l-4.2-2.424a.6.6 0 0 0-.9.52Z"/>
-                        </g>
-                     </svg>
-                  </a>
-               </div>
+      <div class="promo-banner">
+        <div class="promo-content">
+          <p class="promo-tag">Weekly Deals</p>
+          <h2 class="promo-title">
+            Unbeatable Weekly Offers<span> on Beautiful Flowers</span>
+          </h2>
+          <p class="promo-description">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          </p>
+          <button class="promo-btn">Shop Now →</button>
+        </div>
+        <div class="promo-image-container">
+          <img
+            src="images/newarrivals.jpg"
+            alt="Woman with flowers"
+            class="promo-image"
+          />
+        </div>
+      </div>
+    </section>
+    <div class="design-ribbon">
+      <img src="./assets/images/flowers.jpg" />
+      <span>Birthday</span>
+      <img src="./assets/images/flowers.jpg" />
+      <span> Weddings</span>
+      <img src="./assets/images/flowers.jpg" />
+      <span> Anniversary</span>
+      <img src="./assets/images/flowers.jpg" />
+      <span>Thank you</span>
+      <img src="./assets/images/flowers.jpg" />
+      <span>Graduation</span>
+      <img src="./assets/images/flowers.jpg" />
+    </div>
+    <section class="deals">
+      <div class="deals-header">
+        <div class="deals-sub-header">
+          <h2 class="dealstitle">Best Seller</h2>
+          <h3 class="dealssubtitle"><span>Deals</span> of the Day</h3>
+        </div>
+        <p class="dealstext">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam
+        </p>
+      </div>
+      <div class="deals-content">
+        <div class="deals-promo">
+          <img src="images/flower-holded.jpg" alt="Promo Flower" />
+          <div class="promo-text">
+            <h4>50% Off</h4>
+            <p>06 Dec - 16 Dec</p>
+            <a href="#" class="cta">Shop Now</a>
+          </div>
+        </div>
+        <div class="deals-grid">
+          <div class="deal-card">
+            <div class="badge pink">50% off</div>
+            <img src="images/flower1.jpg" alt="Rose Boutique" />
+            <div class="product-actions">
+              <button class="action-btn">⤨</button>
+              <button class="action-btn">⭐</button>
+              <button class="action-btn">🛒</button>
             </div>
-            <div class="footer-links">
-               <h3>Company</h3>
-               <ul>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                  <li><a href="#">Career</a></li>
-               </ul>
+            <div class="dealnames">
+              <p class="dealssubtittle">Bouquets</p>
+              <div class="rating">
+                <span class="star">⭐</span>
+                <span class="rating-number">4.8</span>
+              </div>
             </div>
-            <div class="footer-links">
-               <h3>Customer Services</h3>
-               <ul>
-                  <li><a href="#">My Account</a></li>
-                  <li><a href="#">Track Your Order</a></li>
-                  <li><a href="#">Return</a></li>
-                  <li><a href="#">FAQ</a></li>
-               </ul>
+            <h4>Rose Boutique</h4>
+            <p class="price"><span>$35.00</span> <del>$70.00</del></p>
+          </div>
+          <div class="deal-card">
+            <div class="badge pink">30% off</div>
+            <img src="images/flower2.jpg" alt="Rose Bouquets" />
+            <div class="dealnames">
+              <p class="dealssubtittle">Bouquets</p>
+              <div class="rating">
+                <span class="star">⭐</span>
+                <span class="rating-number">4.9</span>
+              </div>
             </div>
-            <div class="footer-links">
-               <h3>Our Information</h3>
-               <ul>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#">User Terms & Condition</a></li>
-                  <li><a href="#">Return Policy</a></li>
-               </ul>
+            <h4>Rose Bouquets</h4>
+            <p class="price"><span>$35.00</span> <del>$50.00</del></p>
+          </div>
+          <div class="deal-card">
+            <div class="badge pink">20% off</div>
+            <img src="images/flower3.jpg" alt="Flower Basket" />
+            <div class="dealnames">
+              <p class="dealssubtittle">Basket</p>
+              <div class="rating">
+                <span class="star">⭐</span>
+                <span class="rating-number">5.0</span>
+              </div>
             </div>
-            <div class="footer-contact">
-               <h3>Contact Info</h3>
-               <p>+0123-456-789</p>
-               <p>example@gmail.com</p>
-               <p>8502 Preston Rd. Inglewood, Maine 98380</p>
+            <h4>Flower Basket</h4>
+            <p class="price"><span>$80.00</span> <del>$100.00</del></p>
+          </div>
+          <div class="deal-card">
+            <div class="badge pink">10% off</div>
+            <img src="images/flower4.jpg" alt="Colorful Rose" />
+            <div class="dealnames">
+              <p class="dealssubtittle">Bouquets</p>
+              <div class="rating">
+                <span class="star">⭐</span>
+                <span class="rating-number">4.8</span>
+              </div>
             </div>
-            <div class="footer-bottom">
-               <p>Copyright © 2024 <span>Flower Shop Website</span>. All Rights Reserved.</p>
-               <div class="footer-lang">
-                  <span>English ▼</span> | <span>USD ▼</span>
-               </div>
+            <h4>Colorful Rose</h4>
+            <p class="price"><span>$45.00</span> <del>$50.00</del></p>
+          </div>
+          <div class="deal-card">
+            <div class="badge pink">50% off</div>
+            <img src="images/flower5.jpg" alt="Pink Flowers" />
+            <div class="dealnames">
+              <p class="dealssubtittle">Flower</p>
+              <div class="rating">
+                <span class="star">⭐</span>
+                <span class="rating-number">4.9</span>
+              </div>
             </div>
-         </div>
-      </footer>
-   </body>
+            <h4>Pink Flowers</h4>
+            <p class="price"><span>$20.00</span> <del>$40.00</del></p>
+          </div>
+          <div class="deal-card">
+            <div class="badge pink">10% off</div>
+            <img src="images/flower6.jpg" alt="Rose Bouquets" />
+            <div class="dealnames">
+              <p class="dealssubtittle">Bouquets</p>
+              <div class="rating">
+                <span class="star">⭐</span>
+                <span class="rating-number">4.8</span>
+              </div>
+            </div>
+            <h4>Rose Bouquets</h4>
+            <p class="price"><span>$90.00</span> <del>$100.00</del></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonial" class="testimonials">
+      <h3 class="testimonial-tag">Testimonial</h3>
+      <h2>What <span class="colored">Our Clients Say</span></h2>
+      <div class="testimonial-section">
+        <div class="testimonial-card">
+          <div class="star-png">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <h3>5.0</h3>
+          </div>
+          <h3>Gorgeous Bouquets!</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
+            earum perspiciatis ab dolor, eaque quas cum molestias fugiat totam
+            ratione, pariatur quaerat minima, provident similique aut explicabo
+            commodi! Amet iusto est sunt laudantium odio aliquam qui animi ea
+            culpa? Veniam?
+          </p>
+          <div class="review-image">
+            <img
+              src="https://media.istockphoto.com/id/2178339312/photo/confident-mature-businesswoman-on-white-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=rTlt3GqyZTCuaTEeF2-h0UF9SUV69DvyjVCrshwtXu4="
+            />
+            <div>
+              <h3>Jenny Wilson</h3>
+              <p>Happy Customer</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="star-png">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <h3>5.0</h3>
+          </div>
+          <h3>Beautiful Flowers!</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
+            earum perspiciatis ab dolor, eaque quas cum molestias fugiat totam
+            ratione, pariatur quaerat minima, provident similique aut explicabo
+            commodi! Amet iusto est sunt laudantium odio aliquam qui animi ea
+            culpa? Veniam?
+          </p>
+          <div class="review-image">
+            <img
+              src="https://media.istockphoto.com/id/2099403180/photo/laughing-yougn-businesswoman-standing-with-her-arms-crossed-against-an-office-wall.webp?a=1&b=1&s=612x612&w=0&k=20&c=fd9yaVrgWeZIHTfllbUmxTjPRVD2b79Yzt4HQlQfNSA="
+              alt=""
+            />
+            <div>
+              <h3>Jenny Wilson</h3>
+              <p>Happy Customer</p>
+            </div>
+          </div>
+        </div>
+        <div class="slider">
+          <i class="fa-solid fa-minus colored"></i>
+          <i class="fa-solid fa-minus"></i>
+          <i class="fa-solid fa-minus"></i>
+          <i class="fa-solid fa-minus"></i>
+        </div>
+      </div>
+    </section>
+    <section id="news-and-blogs" class="news-and-blogs">
+      <div class="news-and-blogs-header">
+        <div class="news-and-blogs-header-text">
+          <span class="">News & Blogs </span>
+          <h3>Our Latest <span class="colored">News & Blogs</span></h3>
+        </div>
+        <button class="btn">View All Blogs</button>
+      </div>
+      <div class="news-and-blog-cards">
+        <div class="blog-card">
+          <img
+            src="https://media.istockphoto.com/id/1500090903/photo/anonymous-african-american-woman-in-an-orange-dress-holding-a-flower-bouquet.webp?a=1&b=1&s=612x612&w=0&k=20&c=ss2dWdcchYKBqrTnr3lqfcSHOM_BKHl3_QeGhKwehnQ="
+          />
+          <span class="tag">Wedding Bouquet</span>
+          <div class="blog-card-info">
+            <span>Jenny Alexander . 13 Dec 2024</span>
+            <h4>Choosing the Perfect Wedding Bouquet for Your Big Day</h4>
+            <a href="#" class="colored bold">Read More</a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img
+            src="https://media.istockphoto.com/id/1368204520/photo/happy-woman-smelling-blooming-purple-orchid-holding-pot-girl-gardener-taking-care-of-home.webp?a=1&b=1&s=612x612&w=0&k=20&c=-0bzy4VtnnoUja-01ktwn3Z71p2qg9IzsvKHR5jm9zk="
+          />
+          <span class="tag">Wedding Bouquet</span>
+          <div class="blog-card-info">
+            <span>Jenny Alexander . 13 Dec 2024</span>
+            <h4>Celebrating Love: The Best Flowers For Every Anniversary</h4>
+            <a href="#" class="colored bold">Read More</a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img
+            src="https://media.istockphoto.com/id/2152939377/photo/girl-covers-her-face-with-a-bouquet-of-flowers-on-a-clean-blue-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=5AB5HXg65GepVySBCJBxJhUZp2mulK8QOQzi5gL2Usw="
+            alt="Girl with flower bouquet"
+          />
+          <span class="tag">Bouquet Tips</span>
+          <div class="blog-card-info">
+            <span>Jenny Alexander . 13 Dec 2024</span>
+            <h4>Top Tips for Designing Your Floral Bouquets for Maximum...</h4>
+            <a href="#" class="colored bold">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="design-ribbon">
+      <img src="./assets/images/flowers.jpg" />
+      <span>Birthday</span>
+      <img src="./assets/images/flowers.jpg" />
+      <span> Weddings</span>
+      <img src="./assets/images/flowers.jpg" />
+      <span> Anniversary</span>
+      <img src="./assets/images/flowers.jpg" />
+      <span>Thank you</span>
+      <img src="./assets/images/flowers.jpg" />
+      <span>Graduation</span>
+      <img src="./assets/images/flowers.jpg" />
+    </div>
+    <div class="follow-us-section">
+      <div class="follow-us-section-header">
+        <p>Follow Us</p>
+        <h3>Follow Us On <span>Instagram</span></h3>
+      </div>
+      <div class="image-gallery">
+        <div class="image-gallery-section-1 multi-columns">
+          <div class="image-card">
+            <img src="./assets/images/image-5.png" />
+          </div>
+          <div class="image-card">
+            <img src="./assets/images/image-2.png" />
+          </div>
+          <div class="image-card">
+            <img src="./assets/images/image-3.png" />
+          </div>
+          <div class="image-card">
+            <img src="./assets/images/image-4.png" />
+          </div>
+        </div>
+        <div class="image-gallery-section-2 image-card">
+          <img src="./assets/images/image-1.png" />
+        </div>
+        <div class="image-gallery-section-6 multi-columns">
+          <div class="image-card">
+            <img src="./assets/images/image-7.png" />
+          </div>
+          <div class="image-card">
+            <img src="./assets/images/image-8.png" />
+          </div>
+          <div class="image-card">
+            <img src="./assets/images/image-9.png" />
+          </div>
+          <div class="image-card">
+            <img src="./assets/images/image-3.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="design-ribbon">
+      <img src="./assets/images/flowers.jpg" />
+      <span>Birthday</span>
+      <img src="./assets/images/flowers.jpg" />
+      <span> Weddings</span>
+      <img src="./assets/images/flowers.jpg" />
+      <span> Anniversary</span>
+      <img src="./assets/images/flowers.jpg" />
+      <span>Thank you</span>
+      <img src="./assets/images/flowers.jpg" />
+      <span>Graduation</span>
+      <img src="./assets/images/flowers.jpg" />
+    </div>
+    <div class="FAQs-section">
+      <div class="FAQs-section-header">
+        <p>FAQs</p>
+        <h3>Question?<span>Look here.</span></h3>
+      </div>
+      <div class="question-section">
+        <div class="question-section-1">
+          <div class="question-box">
+            <div>
+              <b>What types of flowers do you offer?</b>
+              <p class="highlighted-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+                eiusmod tempor incididunt ut labore...
+              </p>
+            </div>
+            <span class="handler-close">+</span>
+            <span class="handler-open">–</span>
+          </div>
+          <div class="question-box">
+            <div>
+              <b>Do you offer same-day delivery?</b>
+              <p class="highlighted-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+                eiusmod tempor incididunt ut labore...
+              </p>
+            </div>
+            <span class="handler-close">+</span>
+            <span class="handler-open">–</span>
+          </div>
+          <div class="question-box">
+            <div>
+              <b>Do you deliver outside your local area?</b>
+              <p class="highlighted-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+                eiusmod tempor incididunt ut labore...
+              </p>
+            </div>
+            <span class="handler-close">+</span>
+            <span class="handler-open">–</span>
+          </div>
+          <div class="question-box">
+            <div>
+              <b>What payment methods do you accept?</b>
+              <p class="highlighted-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+                eiusmod tempor incididunt ut labore...
+              </p>
+            </div>
+            <span class="handler-close">+</span>
+            <span class="handler-open">–</span>
+          </div>
+          <div class="question-box">
+            <div>
+              <b>Do you deliver to offices or event venues?</b>
+              <p class="highlighted-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+                eiusmod tempor incididunt ut labore...
+              </p>
+            </div>
+            <span class="handler-close">+</span>
+            <span class="handler-open">–</span>
+          </div>
+          <div class="question-box">
+            <div>
+              <b>How do I track my order?</b>
+              <p class="highlighted-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+                eiusmod tempor incididunt ut labore...
+              </p>
+            </div>
+            <span class="handler-close">+</span>
+            <span class="handler-open">–</span>
+          </div>
+        </div>
+        <div class="question-section-2">
+          <div class="question-box-2">
+            <div class="question-box-2-icon">
+              <img src="./assets/images/icon4.png" />
+            </div>
+            <div class="question-box-2-text">
+              <b>Do you have different questions?</b>
+              <p>
+                our teams will answer all your questions. <br />
+                we ensure a quick response.
+              </p>
+            </div>
+            <button class="question-box-2-button">Contact Us</button>
+          </div>
+        </div>
+      </div>
+      <div class="FAQs-answers">
+        <div class="FAQs-answer">
+          <div class="icon">
+            <img src="./assets/images/icon1.png" />
+          </div>
+          <div class="info">
+            <b>Free Shipping</b>
+            <p>Free shipping for order above $50</p>
+          </div>
+        </div>
+        <div class="FAQs-answer">
+          <div class="icon">
+            <img src="./assets/images/icon2.png" />
+          </div>
+          <div class="info">
+            <b>Flexible payment</b>
+            <p>Multiple secure payment options</p>
+          </div>
+        </div>
+        <div class="FAQs-answer">
+          <div class="icon">
+            <img src="./assets/images/icon3.png" />
+          </div>
+          <div class="info">
+            <b>24×7 Support</b>
+            <p>We support online all days</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="newsletter-section">
+      <div class="newsletter-section-header">
+        <p class="newsletter-heading">Our Newsletter</p>
+        <h3>
+          Subscribe to Our Newsletter to <br /><span
+            >Get Updates on Our Latest Offers</span
+          >
+        </h3>
+        <p class="discount-paragraph">
+          Get 20% off on your first order by subscribing to our newsletter
+        </p>
+        <form class="newsletter-subscription-section">
+          <input
+            class="email"
+            type="email"
+            placeholder="Enter Email Address"
+            required
+          />
+          <button>Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h2>
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiIgdmlld0JveD0iMCAwIDI2IDI2Ij48ZyBmaWxsPSJub25lIj48ZGVmcz48bWFzayBpZD0iU1ZHbkw1dlNjU1ciPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0wIDBoMjZ2MjZIMHoiLz48ZyBmaWxsPSIjMDAwIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xOS40OSAxNi43MTRhNC4wMDMgNC4wMDMgMCAwIDAgMC03LjQyN3EuMDEtLjE0My4wMS0uMjg3QTQgNCAwIDAgMCAxMyA1Ljg3N2E0IDQgMCAwIDAtNi40OSAzLjQxYTQuMDAzIDQuMDAzIDAgMCAwIDAgNy40MjdxLS4wMS4xNDItLjAxLjI4NmE0IDQgMCAwIDAgNi41IDMuMTIzYTQgNCAwIDAgMCA2LjQ5LTMuNDFtLTIuMTA4LTcuMDM2YTEgMSAwIDAgMCAuODM1IDEuMzM0YTIgMiAwIDAgMSAwIDMuOTc2YTEgMSAwIDAgMC0uODM1IDEuMzM0cS4xMTcuMzI0LjExOC42NzhhMiAyIDAgMCAxLTMuNjY3IDEuMTA1YTEgMSAwIDAgMC0xLjY2NiAwYTIgMiAwIDAgMS0zLjU1LTEuNzgzYTEgMSAwIDAgMC0uODM0LTEuMzMzYTIgMiAwIDAgMSAwLTMuOTc3YTEgMSAwIDAgMCAuODM1LTEuMzM0YTIgMiAwIDAgMSAzLjU1LTEuNzgzYTEgMSAwIDAgMCAxLjY2NSAwYTIgMiAwIDAgMSAzLjU1IDEuNzgzIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBkPSJNMTYuNSAxM2EzLjUgMy41IDAgMSAxLTcgMGEzLjUgMy41IDAgMCAxIDcgMCIvPjwvZz48L21hc2s+PC9kZWZzPjxjaXJjbGUgY3g9IjEzIiBjeT0iMTMiIHI9IjEzIiBmaWxsPSIjRkU5Q0VGIiBtYXNrPSJ1cmwoI1NWR25MNXZTY1NXKSIvPjwvZz48L3N2Zz4="
+              alt=""
+            />
+            Flower Shop.
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna.
+          </p>
+          <div class="footer-socials">
+            <a
+              href="http://facebook.com"
+              class="facebook"
+              aria-label="facebook"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#560099"
+                  d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"
+                />
+              </svg>
+            </a>
+            <a href="http://X.com" class="X" aria-label="twitter">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="none"
+                  stroke="#5C03A1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="m13.081 10.712l-4.786-6.71a.6.6 0 0 0-.489-.252H5.28a.6.6 0 0 0-.488.948l6.127 8.59m2.162-2.576l6.127 8.59a.6.6 0 0 1-.488.948h-2.526a.6.6 0 0 1-.489-.252l-4.786-6.71m2.162-2.576l5.842-6.962m-8.004 9.538L5.077 20.25"
+                />
+              </svg>
+            </a>
+            <a
+              href="http://pinterest.com"
+              class="pinterest"
+              aria-label="pinterest"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#560099"
+                  fill-rule="evenodd"
+                  d="M3.421 8.447C3.797 4.73 7.19 1 12 1c3.328 0 5.656 1.261 7.045 3.181c1.34 1.853 1.67 4.13 1.444 5.999c-.196 1.625-.71 3.529-1.753 5.025c-1.09 1.562-2.815 2.726-5.203 2.487c-1.203-.12-2.096-.587-2.75-1.189a358 358 0 0 1-.702 2.044a181 181 0 0 0-1.153 3.412a1.5 1.5 0 0 1-2.856-.918c.33-1.024.745-2.23 1.175-3.475l.203-.591a153 153 0 0 0 1.491-4.495c-.07-.146-.149-.312-.228-.49a10 10 0 0 1-.379-.99c-.102-.325-.215-.764-.215-1.207c0-.904.21-1.802.793-2.468a2.45 2.45 0 0 1 2.41-.79c1.18.26 1.415 1.373 1.463 1.75c.062.49.006 1.037-.074 1.532c-.123.764-.358 1.694-.647 2.69a3.7 3.7 0 0 0 .26 1.06c.247.585.644 1.054 1.507 1.14c1.076.108 1.83-.339 2.444-1.218c.66-.946 1.072-2.315 1.236-3.669c.157-1.305-.098-2.777-.897-3.88C15.864 4.902 14.5 4 12 4C8.811 4 6.635 6.48 6.406 8.749c-.158 1.563.192 2.655.54 3.163a1.5 1.5 0 1 1-2.477 1.694c-.847-1.238-1.257-3.09-1.048-5.159"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+            <a href="http://instagram.com" class="insta" aria-label="instagram">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#560099"
+                  d="M12.001 9a3 3 0 1 0 0 6a3 3 0 0 0 0-6m0-2a5 5 0 1 1 0 10a5 5 0 0 1 0-10m6.5-.25a1.25 1.25 0 0 1-2.5 0a1.25 1.25 0 0 1 2.5 0M12.001 4c-2.474 0-2.878.007-4.029.058c-.784.037-1.31.142-1.798.332a2.9 2.9 0 0 0-1.08.703a2.9 2.9 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.007 9.075 4 9.461 4 12c0 2.475.007 2.878.058 4.029c.037.783.142 1.31.331 1.797c.17.435.37.748.702 1.08c.337.336.65.537 1.08.703c.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.475 0 2.878-.007 4.029-.058c.782-.037 1.308-.142 1.797-.331a2.9 2.9 0 0 0 1.08-.703c.337-.336.538-.649.704-1.08c.19-.492.296-1.018.332-1.8c.052-1.103.058-1.49.058-4.028c0-2.474-.007-2.878-.058-4.029c-.037-.782-.143-1.31-.332-1.798a2.9 2.9 0 0 0-.703-1.08a2.9 2.9 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.926 4.006 14.54 4 12 4m0-2c2.717 0 3.056.01 4.123.06c1.064.05 1.79.217 2.427.465c.66.254 1.216.598 1.772 1.153a4.9 4.9 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.047 1.066.06 1.405.06 4.122s-.01 3.056-.06 4.122s-.218 1.79-.465 2.428a4.9 4.9 0 0 1-1.153 1.772a4.9 4.9 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465c-1.067.047-1.406.06-4.123.06s-3.056-.01-4.123-.06c-1.064-.05-1.789-.218-2.427-.465a4.9 4.9 0 0 1-1.772-1.153a4.9 4.9 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.012 15.056 2 14.717 2 12s.01-3.056.06-4.122s.217-1.79.465-2.428a4.9 4.9 0 0 1 1.153-1.772A4.9 4.9 0 0 1 5.45 2.525c.637-.248 1.362-.415 2.427-.465C8.945 2.013 9.284 2 12.001 2"
+                />
+              </svg>
+            </a>
+            <a href="http://youtube.com" class="youtube" aria-label="youtube">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <g fill="none" fill-rule="evenodd">
+                  <path
+                    d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+                  />
+                  <path
+                    fill="#560099"
+                    d="M12 4c.855 0 1.732.022 2.582.058l1.004.048l.961.057l.9.061l.822.064a3.8 3.8 0 0 1 3.494 3.423l.04.425l.075.91c.07.943.122 1.971.122 2.954s-.052 2.011-.122 2.954l-.075.91l-.04.425a3.8 3.8 0 0 1-3.495 3.423l-.82.063l-.9.062l-.962.057l-1.004.048A62 62 0 0 1 12 20a62 62 0 0 1-2.582-.058l-1.004-.048l-.961-.057l-.9-.062l-.822-.063a3.8 3.8 0 0 1-3.494-3.423l-.04-.425l-.075-.91A41 41 0 0 1 2 12c0-.983.052-2.011.122-2.954l.075-.91l.04-.425A3.8 3.8 0 0 1 5.73 4.288l.821-.064l.9-.061l.962-.057l1.004-.048A62 62 0 0 1 12 4m-2 5.575v4.85c0 .462.5.75.9.52l4.2-2.425a.6.6 0 0 0 0-1.04l-4.2-2.424a.6.6 0 0 0-.9.52Z"
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Customer Services</h3>
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Track Your Order</a></li>
+            <li><a href="#">Return</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Our Information</h3>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">User Terms & Condition</a></li>
+            <li><a href="#">Return Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Info</h3>
+          <p>+0123-456-789</p>
+          <p>example@gmail.com</p>
+          <p>8502 Preston Rd. Inglewood, Maine 98380</p>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            Copyright © 2024 <span>Flower Shop Website</span>. All Rights
+            Reserved.
+          </p>
+          <div class="footer-lang">
+            <span>English ▼</span> | <span>USD ▼</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
