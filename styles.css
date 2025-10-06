@@ -319,8 +319,16 @@ body {
   display: flex;
   gap: 14px;
   align-items: center;
-  flex-wrap: wrap;
 }
+
+.cta-row .btn-shop{
+  white-space: nowrap;
+}
+
+.cta-row .products{
+  color: #000;
+}
+
 
 .btn {
   display: inline-block;
@@ -712,7 +720,6 @@ body {
   align-items: center;
   justify-content: center;
   gap: 20px;
-
   padding: 90px;
 }
 
@@ -737,13 +744,12 @@ body {
   flex: 1;
   width: 600px;
   height: 400px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   display: flex;
   overflow: hidden;
 }
 
 .center>div {
-  background-color: #ffffffe4;
+  background-color: #f5f5f5e4;
   height: 100%;
   width: 100%;
 }
