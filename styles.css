@@ -1258,70 +1258,8 @@ body {
   font-weight: bold;
 }
 
-/* Responsive Design */
-@media (max-width: 900px) {
-  .banner {
-    flex-direction: column;
-    gap: 20px;
-  }
 
-  .side {
-    flex: none;
-  }
 
-  .side img {
-    height: 250px;
-    width: 300px;
-  }
-
-  .arrival-products {
-    grid-template-columns: 1fr;
-  }
-
-  .promo-banner {
-    grid-template-columns: 1fr;
-    padding: 30px;
-  }
-
-  .promo-title {
-    font-size: 28px;
-  }
-
-  .deals-content {
-    flex-direction: column;
-  }
-
-  .deals-promo {
-    width: 100%;
-    flex: none;
-  }
-
-  .deals-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .title {
-    font-size: 36px;
-  }
-
-  .num {
-    font-size: 40px;
-  }
-
-  .countdown {
-    gap: 10px;
-  }
-
-  .arrival-title {
-    font-size: 28px;
-  }
-
-  .deals-grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 /*Nyipoji */
 
